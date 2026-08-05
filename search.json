@@ -1,17 +1,31 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Luke Burton",
-    "section": "",
-    "text": "PhD Researcher · Department of Infectious Disease Epidemiology and Dynamics, London School of Hygiene & Tropical Medicine\n\n\n\n\n\n\n\nUnderstanding and predicting the behavioural drivers of epidemic dynamics. Also economic evaluation of blood-borne virus screening.\n\nMy doctoral work asks how social contact, mobility and attitude data can be used to understand and forecast the behavioural drivers of epidemic dynamics. It builds on a background in mathematics and health data science, and on earlier work using branching process models to estimate the probability that an introduction becomes a major epidemic.\nI also work in health economics, on cost-utility modelling and economic evaluation of blood-borne virus screening interventions: coding hepatitis B progression models, evaluating TB IGRA testing in high-risk groups, and micro-costing digitally enhanced BBV testing.\nAlongside the PhD:\n\n\nVisiting Researcher, Imperial College London — Held as part of the PhD.\nResearch Assistant, Health Economics (part-time), University College London — Infectious Disease Informatics. NIHR-funded work on cost-utility modelling and economic evaluation of blood-borne virus screening interventions.\n\n\n\nEmail · LSHTM profile · UCL profile · ORCID · Substack · LinkedIn · GitHub"
-  },
-  {
     "objectID": "writing.html",
     "href": "writing.html",
     "title": "Writing",
     "section": "",
     "text": "Essays, notes, and things that aren’t papers.\n\nI write occasionally at laburton.substack.com."
+  },
+  {
+    "objectID": "now.html",
+    "href": "now.html",
+    "title": "Now",
+    "section": "",
+    "text": "What I’m working on at the moment."
+  },
+  {
+    "objectID": "now.html#research",
+    "href": "now.html#research",
+    "title": "Now",
+    "section": "Research",
+    "text": "Research\nWorking out how social contact, mobility and attitude data can be used to understand and forecast the behavioural drivers of epidemic dynamics — the first substantive stretch of the PhD.\nAlongside it, hepatitis B progression models for evaluating emergency department blood-borne virus opt-out testing, and micro-costing of digitally enhanced BBV testing."
+  },
+  {
+    "objectID": "now.html#elsewhere",
+    "href": "now.html#elsewhere",
+    "title": "Now",
+    "section": "Elsewhere",
+    "text": "Elsewhere\nRepresenting early career researchers at the Centre for the Mathematical Modelling of Infectious Diseases, which mostly means organising the monthly meetings and making sure people actually turn up to them.\nAlso pulls pints behind the LSHTM bar. 301 served, at last count.\nOccasional writing goes up on Substack."
   },
   {
     "objectID": "cv.html",
@@ -63,25 +77,11 @@
     "text": "Skills\n\n\n\nResearch interests\n\n\n\nInfectious disease modelling, Epidemiological modelling, Machine learning, Health economics, Cost-utility modelling, Economic evaluation\n\n\n\n\n\nSoftware\n\n\n\nR"
   },
   {
-    "objectID": "now.html",
-    "href": "now.html",
-    "title": "Now",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Luke Burton",
     "section": "",
-    "text": "What I’m working on at the moment."
-  },
-  {
-    "objectID": "now.html#research",
-    "href": "now.html#research",
-    "title": "Now",
-    "section": "Research",
-    "text": "Research\nWorking out how social contact, mobility and attitude data can be used to understand and forecast the behavioural drivers of epidemic dynamics — the first substantive stretch of the PhD.\nAlongside it, hepatitis B progression models for evaluating emergency department blood-borne virus opt-out testing, and micro-costing of digitally enhanced BBV testing."
-  },
-  {
-    "objectID": "now.html#elsewhere",
-    "href": "now.html#elsewhere",
-    "title": "Now",
-    "section": "Elsewhere",
-    "text": "Elsewhere\nRepresenting early career researchers at the Centre for the Mathematical Modelling of Infectious Diseases, which mostly means organising the monthly meetings and making sure people actually turn up to them.\nAlso pulls pints behind the LSHTM bar. 301 served, at last count.\nOccasional writing goes up on Substack."
+    "text": "PhD Researcher · Department of Infectious Disease Epidemiology and Dynamics, London School of Hygiene & Tropical Medicine\n\n\n\n\n\n\n\nUnderstanding and predicting the behavioural drivers of epidemic dynamics. Also economic evaluation of blood-borne virus screening.\n\nMy doctoral work asks how social contact, mobility and attitude data can be used to understand and forecast the behavioural drivers of epidemic dynamics. It builds on a background in mathematics and health data science, and on earlier work using branching process models to estimate the probability that an introduction becomes a major epidemic.\nI also work in health economics, on cost-utility modelling and economic evaluation of blood-borne virus screening interventions: coding hepatitis B progression models, evaluating TB IGRA testing in high-risk groups, and micro-costing digitally enhanced BBV testing.\nAlongside the PhD:\n\n\nVisiting Researcher, Imperial College London — Held as part of the PhD.\nResearch Assistant, Health Economics (part-time), University College London — Infectious Disease Informatics. NIHR-funded work on cost-utility modelling and economic evaluation of blood-borne virus screening interventions.\n\n\n\nEmail · LSHTM profile · UCL profile · ORCID · Substack · LinkedIn · GitHub"
   },
   {
     "objectID": "research.html",
@@ -124,33 +124,5 @@
     "title": "Research",
     "section": "Talks",
     "text": "Talks\n\n\n\n\n\n\n\nNo talks yet — add entries to data/talks.yml."
-  },
-  {
-    "objectID": "TASKS.html",
-    "href": "TASKS.html",
-    "title": "Backlog",
-    "section": "",
-    "text": "Running list of things to do to the site. Not urgent, not ordered by priority — delete items as they’re done.\n\n\n\nPublications — data/publications.bib is empty. Add entries as preprints and papers appear; they surface on Research automatically.\nTalks — data/talks.yml is talks: []. Nothing public yet. Add conference talks, posters and seminars as they happen.\nHeadshot — set personal.headshot in data/cv.yml points at images/headshot.jpg, which doesn’t exist yet. Drop a photo in and the circular hero image on About appears by itself.\nResearch → Projects — deliberately high-level for now. Revisit once the thesis structure settles; keep it to strands rather than chapters until then.\nGoogle Scholar — commented out in cv.yml links. Uncomment and fill in once there’s a profile worth linking to.\n\n\n\n\n\nNow page — rewrite roughly monthly, or whenever it stops being true.\nCV — review after each supervisory milestone: upgrade, transfer, new collaborations, anything that changes a title or date.\nWriting — currently a single link out to Substack. If pieces accumulate, convert to a Quarto listing (instructions are in the comment at the bottom of writing.qmd).\n\n\n\n\n\nGitHub Pages IPs — the four A records in Cloudflare are hardcoded GitHub addresses. Stable for years, but if the site ever goes dark with DNS looking correct, re-check them against GitHub’s docs before assuming something else broke.\nHTTPS certificate — auto-renews, expiry was 2026-11-03 at time of setup. If browsers start warning, check Settings → Pages first.\nNode 20 deprecation warning in Actions — harmless for now; the checkout and setup-python actions will need a version bump eventually."
-  },
-  {
-    "objectID": "TASKS.html#content",
-    "href": "TASKS.html#content",
-    "title": "Backlog",
-    "section": "",
-    "text": "Publications — data/publications.bib is empty. Add entries as preprints and papers appear; they surface on Research automatically.\nTalks — data/talks.yml is talks: []. Nothing public yet. Add conference talks, posters and seminars as they happen.\nHeadshot — set personal.headshot in data/cv.yml points at images/headshot.jpg, which doesn’t exist yet. Drop a photo in and the circular hero image on About appears by itself.\nResearch → Projects — deliberately high-level for now. Revisit once the thesis structure settles; keep it to strands rather than chapters until then.\nGoogle Scholar — commented out in cv.yml links. Uncomment and fill in once there’s a profile worth linking to."
-  },
-  {
-    "objectID": "TASKS.html#routine",
-    "href": "TASKS.html#routine",
-    "title": "Backlog",
-    "section": "",
-    "text": "Now page — rewrite roughly monthly, or whenever it stops being true.\nCV — review after each supervisory milestone: upgrade, transfer, new collaborations, anything that changes a title or date.\nWriting — currently a single link out to Substack. If pieces accumulate, convert to a Quarto listing (instructions are in the comment at the bottom of writing.qmd)."
-  },
-  {
-    "objectID": "TASKS.html#maintenance",
-    "href": "TASKS.html#maintenance",
-    "title": "Backlog",
-    "section": "",
-    "text": "GitHub Pages IPs — the four A records in Cloudflare are hardcoded GitHub addresses. Stable for years, but if the site ever goes dark with DNS looking correct, re-check them against GitHub’s docs before assuming something else broke.\nHTTPS certificate — auto-renews, expiry was 2026-11-03 at time of setup. If browsers start warning, check Settings → Pages first.\nNode 20 deprecation warning in Actions — harmless for now; the checkout and setup-python actions will need a version bump eventually."
   }
 ]

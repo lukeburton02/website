@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lukeaburton.co.uk/index.html</loc>
-    <lastmod>2026-08-05T14:33:36.786Z</lastmod>
-  </url>
-  <url>
     <loc>https://lukeaburton.co.uk/writing.html</loc>
-    <lastmod>2026-08-05T14:33:36.786Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lukeaburton.co.uk/cv.html</loc>
-    <lastmod>2026-08-05T14:33:36.785Z</lastmod>
+    <lastmod>2026-08-05T14:36:29.721Z</lastmod>
   </url>
   <url>
     <loc>https://lukeaburton.co.uk/now.html</loc>
-    <lastmod>2026-08-05T14:33:36.786Z</lastmod>
+    <lastmod>2026-08-05T14:36:29.721Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lukeaburton.co.uk/cv.html</loc>
+    <lastmod>2026-08-05T14:36:29.721Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lukeaburton.co.uk/index.html</loc>
+    <lastmod>2026-08-05T14:36:29.721Z</lastmod>
   </url>
   <url>
     <loc>https://lukeaburton.co.uk/research.html</loc>
-    <lastmod>2026-08-05T14:33:36.786Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lukeaburton.co.uk/TASKS.html</loc>
-    <lastmod>2026-08-05T14:33:36.785Z</lastmod>
+    <lastmod>2026-08-05T14:36:29.721Z</lastmod>
   </url>
 </urlset>
