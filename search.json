@@ -4,7 +4,7 @@
     "href": "writing.html",
     "title": "Writing",
     "section": "",
-    "text": "Essays, notes, and things that aren’t papers.\n\nI write occasionally at laburton.substack.com."
+    "text": "Essays, notes, and things that aren’t papers.\n\nOccasional blog posts at laburton.substack.com, on whatever I’ve been interested in, partly to get better at writing."
   },
   {
     "objectID": "now.html",
@@ -18,14 +18,14 @@
     "href": "now.html#research",
     "title": "Now",
     "section": "Research",
-    "text": "Research\nWorking out how social contact, mobility and attitude data can be used to understand and forecast the behavioural drivers of epidemic dynamics — the first substantive stretch of the PhD.\nAlongside it, hepatitis B progression models for evaluating emergency department blood-borne virus opt-out testing, and micro-costing of digitally enhanced BBV testing."
+    "text": "Research\nWorking out how social contact, mobility and attitude data can be used to understand and help anticipate the behavioural drivers of epidemic dynamics — the first substantive stretch of the PhD.\nAlongside it, hepatitis B progression models for evaluating emergency department blood-borne virus opt-out testing, and micro-costing of digitally enhanced BBV testing."
   },
   {
     "objectID": "now.html#elsewhere",
     "href": "now.html#elsewhere",
     "title": "Now",
     "section": "Elsewhere",
-    "text": "Elsewhere\nRepresenting early career researchers at the Centre for the Mathematical Modelling of Infectious Diseases, which mostly means organising the monthly meetings and making sure people actually turn up to them.\nAlso pulls pints behind the LSHTM bar. 301 served, at last count.\nOccasional writing goes up on Substack."
+    "text": "Elsewhere\nRepresenting early career researchers at the Centre for the Mathematical Modelling of Infectious Diseases, which mostly means helping organise the monthly meetings we hold between ourselves.\nAlso pulls pints behind the LSHTM bar — a few hundred of them so far.\nI write the occasional blog post on Substack, usually about something I’ve been interested in, partly to get better at writing."
   },
   {
     "objectID": "cv.html",
@@ -46,83 +46,90 @@
     "href": "cv.html#education",
     "title": "CV",
     "section": "Education",
-    "text": "Education\n\n\n\nSep 2025 – Present\n\n\nPhD, Epidemiology London School of Hygiene & Tropical Medicine\n\nThesis: Understanding and predicting behavioural drivers of epidemic dynamics. Department of Infectious Disease Epidemiology and Dynamics. Expected completion 2029.\n\n\n\n\n\nSep 2024 – Sep 2025\n\n\nMSc Health Data Science London School of Hygiene & Tropical Medicine\n\nDistinction. Thesis: Using machine learning to understand vaccine responses to influenza.\n\n\n\n\n\nSep 2020 – Jun 2024\n\n\nMMath Mathematics University of Oxford\n\nMerit. Thesis: Branching process models for estimating the probability of a major infectious disease epidemic."
+    "text": "Education\n\n\n\nSep 2025 – Present\n\n\n\nDepartment of Infectious Disease Epidemiology and Dynamics\n\nPhD, Epidemiology London School of Hygiene & Tropical Medicine\n\nThesis: Understanding and predicting behavioural drivers of epidemic dynamics.\n\n\n\n\n\nSep 2024 – Sep 2025\n\n\nMSc Health Data Science London School of Hygiene & Tropical Medicine\n\nDistinction\nThesis: Using machine learning to understand vaccine responses to influenza.\n\n\n\n\n\nSep 2020 – Jun 2024\n\n\nMMath Mathematics University of Oxford\n\nMerit\nThesis: Branching process models for estimating the probability of a major infectious disease epidemic."
   },
   {
     "objectID": "cv.html#roles",
     "href": "cv.html#roles",
     "title": "CV",
     "section": "Roles",
-    "text": "Roles\n\n\n\nSep 2025 – Present\n\n\nVisiting Researcher Imperial College London\n\nHeld as part of the PhD.\n\n\n\n\n\nOct 2025 – Present\n\n\nResearch Assistant, Health Economics (part-time) University College London\n\nInfectious Disease Informatics. NIHR-funded work on cost-utility modelling and economic evaluation of blood-borne virus screening interventions.\n\n\n\n\n\nJul 2024 – Sep 2024\n\n\nDisease Modelling Intern Big Data Institute\n\nVaccine equity and trachoma resurgence.\n\n\n\n\n\nJul 2023 – Sep 2023\n\n\nData Science Intern esure Group\n\nPredicting crash rates and quoted premiums.\n\n\n\n\n\nJul 2021 – Aug 2021\n\n\nIT Consulting Intern Aire Logic\n\nProof-of-concept medical rostering system."
+    "text": "Roles\n\n\n\nSep 2025 – Present\n\n\nVisiting Researcher Imperial College London\n\nHeld alongside the PhD.\n\n\n\n\n\nOct 2025 – Present\n\n\n\nInfectious Disease Informatics\n\nResearch Assistant, Health Economics (part-time) University College London\n\nNIHR-funded work on cost-utility modelling and economic evaluation of blood-borne virus screening interventions.\n\n\n\n\n\nJul 2024 – Sep 2024\n\n\nDisease Modelling Intern Big Data Institute\n\nVaccine equity and trachoma resurgence.\n\n\n\n\n\nJul 2023 – Sep 2023\n\n\nData Science Intern esure Group\n\nPredicting crash rates and quoted premiums.\n\n\n\n\n\nJul 2021 – Aug 2021\n\n\nIT Consulting Intern Aire Logic\n\nProof-of-concept medical rostering system."
   },
   {
-    "objectID": "cv.html#service",
-    "href": "cv.html#service",
+    "objectID": "cv.html#volunteering",
+    "href": "cv.html#volunteering",
     "title": "CV",
-    "section": "Service",
-    "text": "Service\n\n\n\nMar 2026 – Present\n\n\nEarly Career Researcher Representative Centre for the Mathematical Modelling of Infectious Diseases, LSHTM\n\nOrganising and facilitating monthly meetings between researchers."
+    "section": "Volunteering",
+    "text": "Volunteering\n\n\n\nMar 2026 – Present\n\n\nEarly Career Researcher Representative Centre for the Mathematical Modelling of Infectious Diseases, LSHTM\n\nHelping organise and facilitate monthly meetings between researchers."
   },
   {
     "objectID": "cv.html#awards",
     "href": "cv.html#awards",
     "title": "CV",
     "section": "Awards",
-    "text": "Awards\n\n\n\n\n\n\n\nNo awards yet — add entries to data/cv.yml."
+    "text": "Awards\n\n\n\n2025\n\n\nHealth Data Science prize London School of Hygiene & Tropical Medicine\n\nHighest GPA in the cohort."
   },
   {
     "objectID": "cv.html#skills",
     "href": "cv.html#skills",
     "title": "CV",
     "section": "Skills",
-    "text": "Skills\n\n\n\nResearch interests\n\n\n\nInfectious disease modelling, Epidemiological modelling, Machine learning, Health economics, Cost-utility modelling, Economic evaluation\n\n\n\n\n\nSoftware\n\n\n\nR"
+    "text": "Skills\n\n\n\nResearch interests\n\n\n\nInfectious disease modelling · Machine learning · Social contact, mobility and attitude data · Economic evaluation\n\n\n\n\n\nSoftware\n\n\n\nR"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Luke Burton",
     "section": "",
-    "text": "PhD Researcher · Department of Infectious Disease Epidemiology and Dynamics, London School of Hygiene & Tropical Medicine\n\n\n\n\n\n\n\nUnderstanding and predicting the behavioural drivers of epidemic dynamics. Also economic evaluation of blood-borne virus screening.\n\nMy doctoral work asks how social contact, mobility and attitude data can be used to understand and forecast the behavioural drivers of epidemic dynamics. It builds on a background in mathematics and health data science, and on earlier work using branching process models to estimate the probability that an introduction becomes a major epidemic.\nI also work in health economics, on cost-utility modelling and economic evaluation of blood-borne virus screening interventions: coding hepatitis B progression models, evaluating TB IGRA testing in high-risk groups, and micro-costing digitally enhanced BBV testing.\nAlongside the PhD:\n\n\nVisiting Researcher, Imperial College London — Held as part of the PhD.\nResearch Assistant, Health Economics (part-time), University College London — Infectious Disease Informatics. NIHR-funded work on cost-utility modelling and economic evaluation of blood-borne virus screening interventions.\n\n\n\nEmail · LSHTM profile · UCL profile · ORCID · Substack · LinkedIn · GitHub"
+    "text": "PhD Researcher · Department of Infectious Disease Epidemiology and Dynamics, London School of Hygiene & Tropical Medicine\n\n\n\n\n\n\n\nUnderstanding and predicting the behavioural drivers of epidemic dynamics. Also economic evaluation of blood-borne virus screening.\n\nMy PhD asks how social contact, mobility and attitude data can be used to understand and help anticipate the behavioural drivers of epidemic dynamics. It builds on a background in mathematics and health data science, and on earlier work using branching process models to estimate the probability that an introduction becomes a major epidemic.\nI also work in health economics, on cost-utility modelling and economic evaluation of blood-borne virus screening interventions: coding hepatitis B progression models, evaluating TB IGRA testing in high-risk groups, and micro-costing digitally enhanced BBV testing.\nI am based in the Department of Infectious Disease Epidemiology and Dynamics, London School of Hygiene & Tropical Medicine. Alongside that:\n\n\nVisiting Researcher, Imperial College London — Held alongside the PhD.\nResearch Assistant, Health Economics (part-time), University College London — NIHR-funded work on cost-utility modelling and economic evaluation of blood-borne virus screening interventions.\n\n\n\nEmail · LSHTM profile · UCL profile · ORCID · Substack · LinkedIn · GitHub"
   },
   {
     "objectID": "research.html",
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "Two connected strands: modelling the behavioural drivers of epidemic dynamics, and evaluating whether the interventions built on them are cost-effective."
+    "text": "Two separate strands of work. Almost all of the week goes to the doctoral project on the behavioural drivers of epidemic dynamics. A much smaller strand is the economic evaluation of blood-borne virus screening."
   },
   {
     "objectID": "research.html#interests",
     "href": "research.html#interests",
     "title": "Research",
     "section": "Interests",
-    "text": "Interests\n\nInfectious disease modelling\nEpidemiological modelling\nMachine learning\nHealth economics\nCost-utility modelling\nEconomic evaluation"
+    "text": "Interests\n\nInfectious disease modelling\nMachine learning\nSocial contact, mobility and attitude data\nEconomic evaluation"
   },
   {
-    "objectID": "research.html#projects",
-    "href": "research.html#projects",
+    "objectID": "research.html#the-doctoral-project",
+    "href": "research.html#the-doctoral-project",
     "title": "Research",
-    "section": "Projects",
-    "text": "Projects\n\nBehavioural drivers of epidemic dynamics\nThe doctoral project. Social contact, mobility and attitude data carry signal about how people actually behave during an outbreak — who mixes with whom, how that changes under pressure, and how quickly it reverts. The question is whether that signal can be used not just to explain epidemic dynamics after the fact, but to forecast them.\n\n\nEconomic evaluation of blood-borne virus screening\nNIHR-funded work on whether blood-borne virus testing interventions are worth what they cost: coding hepatitis B progression models to evaluate emergency department opt-out testing, assessing TB IGRA testing in high-risk groups, and micro-costing digitally enhanced BBV testing.\n\n\nVaccine responses and vaccine equity\nEarlier work using machine learning to understand vaccine responses to influenza, and modelling vaccine equity and trachoma resurgence."
+    "section": "The doctoral project",
+    "text": "The doctoral project\n\nBehavioural drivers of epidemic dynamics\nSocial contact, mobility and attitude data carry signal about how people actually behave during an outbreak — who mixes with whom, how that changes under pressure, and how quickly it reverts. The question is whether that signal can be used not just to explain epidemic dynamics after the fact, but to help anticipate them.\nThis is the main work, and everything below it is smaller."
+  },
+  {
+    "objectID": "research.html#alongside-it",
+    "href": "research.html#alongside-it",
+    "title": "Research",
+    "section": "Alongside it",
+    "text": "Alongside it\n\nEconomic evaluation of blood-borne virus screening\nA separate, NIHR-funded project, and a much smaller part of the week. It asks whether blood-borne virus testing interventions are worth what they cost: hepatitis B progression modelling for emergency department opt-out testing, TB IGRA testing in high-risk groups, and micro-costing of digitally enhanced testing.\n\n\nVaccine responses and vaccine equity\nEarlier work using machine learning to understand vaccine responses to influenza, and modelling vaccine equity and trachoma resurgence."
   },
   {
     "objectID": "research.html#collaborations",
     "href": "research.html#collaborations",
     "title": "Research",
     "section": "Collaborations",
-    "text": "Collaborations\nOngoing collaborations with the following institutions. These are research partnerships, not employment:\n\n\nUniversity of Bristol — Cost-effectiveness of emergency department blood-borne virus opt-out testing.\nUniversity of Leicester — Cost-effectiveness of TB screening and micro-costing of digitally enhanced BBV testing.\nUK Health Security Agency (UKHSA) — Blood-borne virus testing evaluation, and epidemic dynamics work held through the Imperial visiting post."
+    "text": "Collaborations\nA few groups I work with on the above — collaborators, not employers.\n\n\nUniversity of Bristol — Mathematical modelling team, on cost-effectiveness of emergency department blood-borne virus opt-out testing.\nUniversity of Leicester — GPs and clinical staff, who help with data and interviews and answer costing questions for the blood-borne virus work.\nUK Health Security Agency (UKHSA) — Mainly on the PhD, on the policy-relevant side, held through the Imperial visiting post. Separately and much more marginally, a data source for the blood-borne virus work, with no active involvement on that side."
   },
   {
     "objectID": "research.html#publications",
     "href": "research.html#publications",
     "title": "Research",
     "section": "Publications",
-    "text": "Publications\nEverything in data/publications.bib is listed here automatically — the file is currently empty, so nothing appears below yet."
+    "text": "Publications\nListed here automatically."
   },
   {
     "objectID": "research.html#talks",
     "href": "research.html#talks",
     "title": "Research",
     "section": "Talks",
-    "text": "Talks\n\n\n\n\n\n\n\nNo talks yet — add entries to data/talks.yml."
+    "text": "Talks\n\n\n\n\n\n\n\nNo talks yet."
   }
 ]
