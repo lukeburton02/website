@@ -22,12 +22,9 @@ builds on a background in mathematics and health data science, and on earlier
 work using branching process models to estimate the probability that an
 introduction becomes a major epidemic.
 
-I also work in health economics, on cost-utility modelling and economic
-evaluation of blood-borne virus screening interventions: coding
-hepatitis B progression models, evaluating TB IGRA testing in high-risk groups,
-and micro-costing digitally enhanced BBV testing.
+I also work in health economics, on screening for blood-borne viruses.
 
-I am based in the {{< var personal.affiliation >}}. Alongside that:
+Alongside the PhD:
 
 {{< include _generated/current-positions.md >}}
 

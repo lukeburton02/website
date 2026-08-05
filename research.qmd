@@ -52,7 +52,7 @@ A few groups I work with on the above.
 
 ## Publications
 
-Listed here automatically.
+{{< include _generated/publications-note.md >}}
 
 ::: {#refs}
 :::

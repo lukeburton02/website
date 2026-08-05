@@ -351,6 +351,34 @@ def build_talks() -> None:
     write("talks.md", "\n\n".join(blocks) if blocks else placeholder("talks"))
 
 
+def build_publications() -> None:
+    """The quiet note that stands in for an empty bibliography.
+
+    Quarto renders data/publications.bib itself, so this decides only whether
+    the note is needed. An entry counts as real when its `@` opens a line
+    outside a comment: the file ships with worked examples commented out with
+    a leading `%`, and those must not suppress the note. Adding a first paper
+    empties this partial, so the note goes away with no .qmd edit.
+    """
+    path = DATA / "publications.bib"
+    lines = path.read_text(encoding="utf-8").splitlines() if path.exists() else []
+
+    has_entries = False
+    for line in (l.strip() for l in lines):
+        if not line.startswith("@"):
+            continue
+        # @string, @comment and @preamble are BibTeX bookkeeping, not papers.
+        if line.lower().startswith(("@string", "@comment", "@preamble")):
+            continue
+        has_entries = True
+        break
+
+    write(
+        "publications-note.md",
+        "<!-- publications listed below -->" if has_entries else placeholder("publications"),
+    )
+
+
 def build_variables(cv: dict) -> None:
     """Scalars for {{< var ... >}} in page prose."""
     personal = cv.get("personal") or {}
@@ -389,6 +417,7 @@ def main() -> None:
     build_headshot(cv)
     build_contact(cv)
     build_talks()
+    build_publications()
 
     print(f"build.py: wrote _variables.yml and {len(list(GENERATED.glob('*.md')))} partials")
 
