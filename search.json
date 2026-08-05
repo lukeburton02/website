@@ -4,7 +4,7 @@
     "href": "writing.html",
     "title": "Writing",
     "section": "",
-    "text": "Essays, notes, and things that aren’t papers.\n\nOccasional blog posts at laburton.substack.com, on whatever I’ve been interested in."
+    "text": "Posts, notes, and things that aren’t papers.\n\nOccasional blog posts at laburton.substack.com, on whatever I’ve been interested in."
   },
   {
     "objectID": "now.html",
@@ -67,7 +67,7 @@
     "href": "cv.html#awards",
     "title": "CV",
     "section": "Awards",
-    "text": "Awards\n\n\n\n2025\n\n\nHealth Data Science prize London School of Hygiene & Tropical Medicine\n\nHighest GPA in the cohort."
+    "text": "Awards\n\n\n\n2025\n\n\nHealth Data Science Prize London School of Hygiene & Tropical Medicine\n\nAwarded annually to the student with the highest numerical GPA on the MSc."
   },
   {
     "objectID": "cv.html#skills",
@@ -109,7 +109,7 @@
     "href": "research.html#alongside-it",
     "title": "Research",
     "section": "Alongside it",
-    "text": "Alongside it\n\nEconomic evaluation of blood-borne virus screening\nAn NIHR-funded project asking whether blood-borne virus testing interventions are worth what they cost: hepatitis B progression modelling for emergency department opt-out testing, for which I am building a reproducible pipeline; TB IGRA testing in high-risk groups; and micro-costing of digitally enhanced testing."
+    "text": "Alongside it\n\nEconomic evaluation of blood-borne virus screening\nAn NIHR-funded project on the cost-effectiveness of blood-borne virus testing interventions: hepatitis B progression modelling for emergency department opt-out testing; TB IGRA testing in high-risk groups; and micro-costing of digitally enhanced testing."
   },
   {
     "objectID": "research.html#earlier-work",
