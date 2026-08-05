@@ -9,14 +9,13 @@ delete items as they're done.
       preprints and papers appear; they surface on Research automatically.
 - [ ] **Talks** — `data/talks.yml` is `talks: []`. Nothing public yet. Add
       conference talks, posters and seminars as they happen.
-- [ ] **Headshot** — set `personal.headshot` in `data/cv.yml` points at
-      `images/headshot.jpg`, which doesn't exist yet. Drop a photo in and the
-      circular hero image on About appears by itself.
 - [ ] **Research → Projects** — deliberately high-level for now. Revisit once
       the thesis structure settles; keep it to strands rather than chapters
       until then.
 - [ ] **Google Scholar** — commented out in `cv.yml` links. Uncomment and fill
       in once there's a profile worth linking to.
+- [x] ~~Headshot~~ — done. `images/headshot.jpg`, sourced from the LSHTM
+      profile and converted to JPEG (393K → 69K).
 
 ## Routine
 
@@ -26,6 +25,14 @@ delete items as they're done.
 - [ ] **Writing** — currently a single link out to Substack. If pieces
       accumulate, convert to a Quarto listing (instructions are in the comment
       at the bottom of `writing.qmd`).
+
+## Open issues
+
+- [ ] **`www.lukeaburton.co.uk` does not resolve.** The apex works and is the
+      canonical URL, so this is cosmetic — but a visitor typing `www.` gets a
+      dead name. The `www` CNAME → `lukeburton02.github.io` was added in
+      Cloudflare and showed in the record list; check it saved and is set to
+      "DNS only". GitHub's certificate already covers `www`.
 
 ## Maintenance
 
@@ -37,3 +44,18 @@ delete items as they're done.
       setup. If browsers start warning, check Settings → Pages first.
 - [ ] **Node 20 deprecation warning** in Actions — harmless for now; the
       `checkout` and `setup-python` actions will need a version bump eventually.
+
+## Traps worth remembering
+
+Both are documented in `CLAUDE.md`; repeated here because they cost time.
+
+- **New `.md` file at the repo root?** Add it to the `render:` exclusion list in
+  `_quarto.yml` or Quarto publishes it to the live site. `TASKS.html` was
+  publicly readable for about an hour before this was caught.
+- **Nav links appear broken?** Check `_site/` contains every page first. A
+  render that aborts midway leaves a partial `_site/`, so the last pages in the
+  render order 404 while earlier ones work.
+- **DNS negative caching.** `.co.uk` has a 3-hour negative TTL. If the domain
+  ever looks unreachable, verify with `ping` (which uses the same resolution
+  path as the browser) rather than `dig` (which bypasses the OS cache and will
+  report success while the browser still fails).

@@ -47,6 +47,36 @@ Consequences, both already handled — don't "tidy" either away:
 - If `quarto preview` dies right after you add a **new** `{{< include >}}`, this
   is why. Run `python3 _render/build.py` and restart it.
 
+### Loose `.md` files at the project root become public pages
+
+Quarto treats **every `.md` file in the project directory as a render input**.
+`CLAUDE.md` and `TASKS.md` were therefore built into `_site/` and published to
+`gh-pages` — `TASKS.html` was publicly readable on the live site until it was
+caught. They are excluded explicitly in `_quarto.yml`:
+
+```yaml
+render:
+  - "*"
+  - "!CLAUDE.md"
+  - "!TASKS.md"
+```
+
+**Any new maintainer doc added at the repo root must be added to that exclusion
+list**, or it ships to the public site. After adding one, confirm with
+`ls _site/ | grep -i <name>` and `grep -rl <name> _site/` — the search index
+(`search.json`) picks these up too.
+
+### A failed render leaves a partially-built `_site/`
+
+If a render aborts midway, Quarto leaves `_site/` containing only the pages
+completed before the failure. The symptom is that *some* navbar links work and
+others 404 — it looks like a broken navbar but is not. This was reported once
+as "clicking CV and Writing does nothing"; the real cause was a dead preview
+server and a stale `.quarto/preview/lock`.
+
+If nav links appear broken, check `_site/` actually contains every page before
+touching `_quarto.yml`.
+
 ## Commands
 
 ```bash
@@ -103,6 +133,8 @@ broken-image icon.
 - The navbar deliberately has **no title** (`navbar: title: false`). `_quarto.yml`
   can't read from `cv.yml`, so a title there would be the one hardcoded copy of
   the name. About is the route home.
+- `website.site-url` is set to the canonical host. Quarto needs it to emit
+  `sitemap.xml` and `robots.txt`; without it both are absent or hostless.
 - `awards: []` and `talks: []` are intentionally empty — the generator renders a
   quiet "nothing yet" note rather than fake entries.
 - Only R is listed under software skills. That is accurate; don't pad it.
