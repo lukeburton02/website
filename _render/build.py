@@ -265,7 +265,9 @@ def build_headshot(cv: dict) -> None:
     name = as_text(personal.get("name"))
 
     if path and (ROOT / path).exists():
-        body = f"::: {{.headshot}}\n![{name}]({path})\n:::"
+        # Empty caption with fig-alt: the name becomes the alt attribute for
+        # screen readers without Quarto rendering it as a visible figcaption.
+        body = f'::: {{.headshot}}\n![]({path}){{fig-alt="{name}"}}\n:::'
     else:
         body = (
             f"<!-- No headshot: set personal.headshot in data/cv.yml to an image "
