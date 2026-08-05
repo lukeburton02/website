@@ -1,0 +1,128 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About",
+    "section": "",
+    "text": "PLACEHOLDER — I study one interesting thing and occasionally write about it.\n\nI’m PLACEHOLDER — Your Name, PLACEHOLDER — Doctoral Researcher at PLACEHOLDER — Department of Something, University of Somewhere, based in PLACEHOLDER — Somewhere, UK.\nPLACEHOLDER — two or three sentences on what you work on and why it matters. This is the paragraph most visitors read; keep it plain and specific. Everything between the braces above is pulled from data/cv.yml, so your name, role and affiliation only ever need changing in one place.\nPLACEHOLDER — a second paragraph, if you want one: background, current preoccupations, or what you’re looking for. Otherwise delete it.\n\n\nEmail · Google Scholar · ORCID · GitHub"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "PLACEHOLDER — one or two lines framing your research interests as a whole."
+  },
+  {
+    "objectID": "research.html#interests",
+    "href": "research.html#interests",
+    "title": "Research",
+    "section": "Interests",
+    "text": "Interests\nPLACEHOLDER — a short paragraph, or a list of themes. Replace with your own.\n\nPLACEHOLDER — first research theme\nPLACEHOLDER — second research theme"
+  },
+  {
+    "objectID": "research.html#projects",
+    "href": "research.html#projects",
+    "title": "Research",
+    "section": "Projects",
+    "text": "Projects\n\nPLACEHOLDER — Project Title\nPLACEHOLDER — what the project asks, how you’re going about it, and where it’s got to. Repeat the heading and paragraph for each project, or delete the section entirely if the publication list does the job."
+  },
+  {
+    "objectID": "research.html#publications",
+    "href": "research.html#publications",
+    "title": "Research",
+    "section": "Publications",
+    "text": "Publications\nEverything in data/publications.bib is listed here automatically — the file is currently empty, so nothing appears below yet."
+  },
+  {
+    "objectID": "research.html#talks",
+    "href": "research.html#talks",
+    "title": "Research",
+    "section": "Talks",
+    "text": "Talks\n\n\n\n14 June 2025\n\n\nPLACEHOLDER — A Talk Title Describing the Work\n\nPLACEHOLDER — Annual Conference of Some Society, SomewhereSlides\n\n\n\n\n\n3 February 2025\n\n\nPLACEHOLDER — An Earlier Talk, With No Slides Online\n\nPLACEHOLDER — Departmental Seminar, University of Somewhere"
+  },
+  {
+    "objectID": "now.html",
+    "href": "now.html",
+    "title": "Now",
+    "section": "",
+    "text": "What I’m working on at the moment.\nPLACEHOLDER — a now page is a snapshot of your current focus, written in the present tense and rewritten whenever it stops being true. Unlike the About page, it’s allowed to go stale between updates."
+  },
+  {
+    "objectID": "now.html#research",
+    "href": "now.html#research",
+    "title": "Now",
+    "section": "Research",
+    "text": "Research\nPLACEHOLDER — the project or chapter actually in front of you right now."
+  },
+  {
+    "objectID": "now.html#reading",
+    "href": "now.html#reading",
+    "title": "Now",
+    "section": "Reading",
+    "text": "Reading\nPLACEHOLDER — what’s on the desk."
+  },
+  {
+    "objectID": "now.html#elsewhere",
+    "href": "now.html#elsewhere",
+    "title": "Now",
+    "section": "Elsewhere",
+    "text": "Elsewhere\nPLACEHOLDER — teaching, organising, non-academic things, or delete this section."
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "PLACEHOLDER — Doctoral Researcher, PLACEHOLDER — Department of Something, University of Somewhere"
+  },
+  {
+    "objectID": "cv.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2076617220706572736f6e616c2e6e616d65203e7d7d",
+    "href": "cv.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2076617220706572736f6e616c2e6e616d65203e7d7d",
+    "title": "CV",
+    "section": "",
+    "text": "PLACEHOLDER — Doctoral Researcher, PLACEHOLDER — Department of Something, University of Somewhere"
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "CV",
+    "section": "Education",
+    "text": "Education\n\n\n\n2024 – Present\n\n\nPLACEHOLDER — PhD in Subject PLACEHOLDER — University of Somewhere\n\nThesis: A Placeholder Title That Says Something About the Work. Supervised by Prof. Placeholder."
+  },
+  {
+    "objectID": "cv.html#roles",
+    "href": "cv.html#roles",
+    "title": "CV",
+    "section": "Roles",
+    "text": "Roles\n\n\n\n2023 – 2024\n\n\nPLACEHOLDER — Research Assistant PLACEHOLDER — Some Research Centre\n\nOne or two lines on what you actually did. Markdown works here."
+  },
+  {
+    "objectID": "cv.html#awards",
+    "href": "cv.html#awards",
+    "title": "CV",
+    "section": "Awards",
+    "text": "Awards\n\n\n\n2023\n\n\nPLACEHOLDER — Departmental Prize for Something PLACEHOLDER — University of Somewhere\n\nOptional one-line context. Delete the key if you don’t want a note."
+  },
+  {
+    "objectID": "cv.html#skills",
+    "href": "cv.html#skills",
+    "title": "CV",
+    "section": "Skills",
+    "text": "Skills\n\n\n\nPLACEHOLDER — Methods\n\n\n\nPlaceholder method one, Placeholder method two\n\n\n\n\n\nPLACEHOLDER — Software\n\n\n\nR, Python, Quarto"
+  },
+  {
+    "objectID": "writing.html",
+    "href": "writing.html",
+    "title": "Writing",
+    "section": "",
+    "text": "Essays, notes, and things that aren’t papers.\nPLACEHOLDER — an intro line, or nothing at all."
+  },
+  {
+    "objectID": "writing.html#placeholder-piece-title",
+    "href": "writing.html#placeholder-piece-title",
+    "title": "Writing",
+    "section": "PLACEHOLDER — Piece Title",
+    "text": "PLACEHOLDER — Piece Title\nPLACEHOLDER — a sentence on what it is, with a link out to wherever it lives. Repeat for each piece."
+  }
+]
