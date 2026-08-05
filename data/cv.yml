@@ -17,7 +17,7 @@ personal:
   # formally as "Research Student - MPhil/PhD - Epidemiology & Population Health".
   role: "PhD Researcher"
   affiliation: "Department of Infectious Disease Epidemiology and Dynamics, London School of Hygiene & Tropical Medicine"
-  tagline: "Understanding and predicting the behavioural drivers of epidemic dynamics — and evaluating whether the interventions we build on them are worth the money."
+  tagline: "Understanding and predicting the behavioural drivers of epidemic dynamics. Also economic evaluation of blood-borne virus screening."
   # Primary contact. The UCL and Imperial addresses are deliberately not listed
   # anywhere on the site. Move this to data/cv.private.yml if you'd rather it
   # weren't in a tracked file.
