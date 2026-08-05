@@ -6,7 +6,8 @@ title: "Writing"
 Essays, notes, and things that aren't papers.
 :::
 
-I write occasionally at [**laburton.substack.com**](https://laburton.substack.com).
+Occasional blog posts at [**laburton.substack.com**](https://laburton.substack.com),
+on whatever I've been interested in, partly to get better at writing.
 
 <!--
 To surface individual pieces here rather than just linking out, add them as a

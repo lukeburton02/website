@@ -221,7 +221,9 @@ h3 {
 
 .cv-entry {
   display: grid;
-  grid-template-columns: 8.5rem 1fr;
+  // 11rem holds the longest range — "Sep 2024 – Sep 2025" — on one line at
+  // the 0.87rem the dates are set in. At 8.5rem the closing year wrapped.
+  grid-template-columns: 11rem 1fr;
   gap: 0 1.5rem;
   padding: 0.75rem 0;
   border-bottom: 1px solid rgba($rule, 0.8);
@@ -236,6 +238,14 @@ h3 {
   font-size: 0.87rem;
   color: $ink-muted;
   padding-top: 0.15rem;
+  white-space: nowrap;   // a date range that breaks reads as two dates
+}
+
+// Department or research group, on its own line above the title.
+.cv-dept {
+  font-size: 0.87rem;
+  color: $ink-muted;
+  margin-bottom: 0.1rem;
 }
 
 .cv-body p:last-child {

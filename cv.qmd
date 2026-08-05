@@ -2,11 +2,7 @@
 title: "CV"
 ---
 
-<!--
-Every line of this page comes from data/cv.yml, by way of _render/build.py.
-There is deliberately no name, date, job title or affiliation written here —
-edit the data file instead.
--->
+[//]: # (Every line here is generated from the CV data — see CLAUDE.md. Never write a name, date, job title or affiliation into this page. This is a link-reference comment rather than an HTML one because HTML comments ship in the public page source.)
 
 ::: {.cv-header}
 ## {{< var personal.name >}} {.unnumbered .cv-name}
@@ -24,7 +20,7 @@ edit the data file instead.
 
 {{< include _generated/cv-roles.md >}}
 
-## Service
+## Volunteering
 
 {{< include _generated/cv-service.md >}}
 

@@ -29,7 +29,7 @@ personal:
   headshot: "images/headshot.jpg"
   # Rendered on the Now page only — kept out of cv.qmd so it never appears on
   # the professional CV.
-  aside: "Also pulls pints behind the LSHTM bar. 301 served, at last count."
+  aside: "Also pulls pints behind the LSHTM bar — a few hundred of them so far."
   links:
     - label: "Email"
       url: "mailto:Luke.Burton1@student.lshtm.ac.uk"
@@ -51,42 +51,57 @@ personal:
 # ---------------------------------------------------------------------------
 # Education. `end: null` renders as "Present".
 # Dates are quoted strings so YAML doesn't reinterpret them.
+#
+# Each entry renders as up to four display lines:
+#   department  — optional, its own line above the qualification
+#   qualification · institution
+#   grade       — optional, its own line (null where there isn't one)
+#   notes       — thesis title and anything else, on the line below the grade
 # ---------------------------------------------------------------------------
 education:
   - qualification: "PhD, Epidemiology"
     institution: "London School of Hygiene & Tropical Medicine"
+    department: "Department of Infectious Disease Epidemiology and Dynamics"
     start: "Sep 2025"
     end: null
-    notes: "Thesis: *Understanding and predicting behavioural drivers of epidemic dynamics*. Department of Infectious Disease Epidemiology and Dynamics. Expected completion 2029."
+    grade: null
+    notes: "Thesis: *Understanding and predicting behavioural drivers of epidemic dynamics*."
 
   - qualification: "MSc Health Data Science"
     institution: "London School of Hygiene & Tropical Medicine"
     start: "Sep 2024"
     end: "Sep 2025"
-    notes: "Distinction. Thesis: *Using machine learning to understand vaccine responses to influenza*."
+    grade: "Distinction"
+    notes: "Thesis: *Using machine learning to understand vaccine responses to influenza*."
 
   - qualification: "MMath Mathematics"
     institution: "University of Oxford"
     start: "Sep 2020"
     end: "Jun 2024"
-    notes: "Merit. Thesis: *Branching process models for estimating the probability of a major infectious disease epidemic*."
+    grade: "Merit"
+    notes: "Thesis: *Branching process models for estimating the probability of a major infectious disease epidemic*."
 
 # ---------------------------------------------------------------------------
 # Roles: positions, appointments, employment.
 # The PhD itself lives under `education` above, not here.
+#
+# `department` is optional and renders on its own line above the job title,
+# the same way it does for education entries. Keep departments out of `notes`
+# so they never run together with the prose description.
 # ---------------------------------------------------------------------------
 roles:
   - title: "Visiting Researcher"
     organisation: "Imperial College London"
     start: "Sep 2025"
     end: null
-    notes: "Held as part of the PhD."
+    notes: "Held alongside the PhD."
 
   - title: "Research Assistant, Health Economics (part-time)"
     organisation: "University College London"
+    department: "Infectious Disease Informatics"
     start: "Oct 2025"
     end: null
-    notes: "Infectious Disease Informatics. NIHR-funded work on cost-utility modelling and economic evaluation of blood-borne virus screening interventions."
+    notes: "NIHR-funded work on cost-utility modelling and economic evaluation of blood-borne virus screening interventions."
 
   - title: "Disease Modelling Intern"
     organisation: "Big Data Institute"
@@ -116,42 +131,52 @@ service:
     organisation: "Centre for the Mathematical Modelling of Infectious Diseases, LSHTM"
     start: "Mar 2026"
     end: null
-    notes: "Organising and facilitating monthly meetings between researchers."
+    notes: "Helping organise and facilitate monthly meetings between researchers."
 
 # ---------------------------------------------------------------------------
-# Institutions you collaborate with but are NOT employed by. Rendered under a
-# heading that says exactly that, so the distinction is never blurred.
+# People and groups collaborated with, NOT employers — the Research page says
+# so above this list.
+#
+# Name institutions and teams, never individuals: the owner's standing rule is
+# that no colleague is named on the public site.
 # ---------------------------------------------------------------------------
 collaborations:
   - organisation: "University of Bristol"
-    notes: "Cost-effectiveness of emergency department blood-borne virus opt-out testing."
+    notes: "Mathematical modelling team, on cost-effectiveness of emergency department blood-borne virus opt-out testing."
   - organisation: "University of Leicester"
-    notes: "Cost-effectiveness of TB screening and micro-costing of digitally enhanced BBV testing."
+    notes: "GPs and clinical staff, who help with data and interviews and answer costing questions for the blood-borne virus work."
   - organisation: "UK Health Security Agency (UKHSA)"
-    notes: "Blood-borne virus testing evaluation, and epidemic dynamics work held through the Imperial visiting post."
+    notes: "Mainly on the PhD, on the policy-relevant side, held through the Imperial visiting post. Separately and much more marginally, a data source for the blood-borne virus work, with no active involvement on that side."
 
 # ---------------------------------------------------------------------------
-# Awards, grants, scholarships, prizes.
-# Empty — none appeared on any source. Degree classifications are recorded in
-# the education notes above instead. Add entries in the form:
+# Awards, grants, scholarships, prizes. Add entries in the form:
 #   - title: "..."
 #     awarder: "..."
 #     year: "2024"
 #     notes: ""
+# Degree classifications are not awards — they live in `grade` on the
+# education entries above.
 # ---------------------------------------------------------------------------
-awards: []
+awards:
+  - title: "Health Data Science prize"
+    awarder: "London School of Hygiene & Tropical Medicine"
+    # Awarded for the 2024–25 MSc year; recorded as the year of completion so
+    # the date column stays a single point, as elsewhere in this section.
+    year: "2025"
+    notes: "Highest GPA in the cohort."
 
 # ---------------------------------------------------------------------------
 # Skills, grouped by category.
 # ---------------------------------------------------------------------------
 skills:
+  # Kept to four, and worded to match the Research page. Near-duplicates
+  # (epidemiological modelling, health economics, cost-utility modelling) are
+  # covered by the broader headings below — don't re-split them.
   - category: "Research interests"
     items:
       - "Infectious disease modelling"
-      - "Epidemiological modelling"
       - "Machine learning"
-      - "Health economics"
-      - "Cost-utility modelling"
+      - "Social contact, mobility and attitude data"
       - "Economic evaluation"
   - category: "Software"
     items:

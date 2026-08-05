@@ -26,14 +26,6 @@ delete items as they're done.
       accumulate, convert to a Quarto listing (instructions are in the comment
       at the bottom of `writing.qmd`).
 
-## Open issues
-
-- [ ] **`www.lukeaburton.co.uk` does not resolve.** The apex works and is the
-      canonical URL, so this is cosmetic — but a visitor typing `www.` gets a
-      dead name. The `www` CNAME → `lukeburton02.github.io` was added in
-      Cloudflare and showed in the record list; check it saved and is set to
-      "DNS only". GitHub's certificate already covers `www`.
-
 ## Maintenance
 
 - [ ] **GitHub Pages IPs** — the four A records in Cloudflare are hardcoded

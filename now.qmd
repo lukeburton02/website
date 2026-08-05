@@ -9,7 +9,7 @@ What I'm working on at the moment.
 ## Research
 
 Working out how social contact, mobility and attitude data can be used to
-understand and forecast the behavioural drivers of epidemic dynamics — the first
+understand and help anticipate the behavioural drivers of epidemic dynamics — the first
 substantive stretch of the PhD.
 
 Alongside it, hepatitis B progression models for evaluating emergency department
@@ -19,12 +19,13 @@ testing.
 ## Elsewhere
 
 Representing early career researchers at the Centre for the Mathematical
-Modelling of Infectious Diseases, which mostly means organising the monthly
-meetings and making sure people actually turn up to them.
+Modelling of Infectious Diseases, which mostly means helping organise the
+monthly meetings we hold between ourselves.
 
 {{< var personal.aside >}}
 
-Occasional writing goes up on [Substack](https://laburton.substack.com).
+I write the occasional blog post on [Substack](https://laburton.substack.com),
+usually about something I've been interested in, partly to get better at writing.
 
 <!--
 A now page (https://nownownow.com/about) is a snapshot of current focus, written

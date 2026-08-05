@@ -135,9 +135,37 @@ broken-image icon.
   the name. About is the route home.
 - `website.site-url` is set to the canonical host. Quarto needs it to emit
   `sitemap.xml` and `robots.txt`; without it both are absent or hostless.
-- `awards: []` and `talks: []` are intentionally empty — the generator renders a
-  quiet "nothing yet" note rather than fake entries.
+- `talks: []` is intentionally empty — the generator renders a quiet "nothing
+  yet" note rather than fake entries. Same for `publications.bib`.
 - Only R is listed under software skills. That is accurate; don't pad it.
+- Research interests are deliberately capped at four, with near-duplicates
+  collapsed ("epidemiological modelling" folded into "infectious disease
+  modelling"; the three economics entries into "economic evaluation"). Don't
+  re-split them. The same four appear on the Research page — keep them in sync.
+
+### Never name individuals; be careful naming groups
+
+**No colleague, collaborator or supervisor is named anywhere on the public
+site.** This is a standing instruction, not a stylistic preference — naming
+someone publicly is their business as much as his.
+
+Named *research groups* follow a subtler line:
+
+- **His own roles may name their group** — e.g. the CMMID volunteering entry
+  names the centre, which he has confirmed is fine.
+- **Groups he collaborates with are described, not named** — "the mathematical
+  modelling team at Bristol", not the group's formal name. He was explicit that
+  this extends to groups within LSHTM. He may revisit this later, but ask
+  before changing it.
+
+Institutions (Bristol, Leicester, UKHSA) are fine to name.
+
+### Proportion matters
+
+The LSHTM PhD is full-time; the UCL health-economics work is one day a week.
+Pages must read that way — he pushed back specifically on the two being given
+equal billing. Don't let the smaller strand grow to match the larger one just
+because there's more concrete detail available about it.
 - Research pages stay at a high level by choice: the PhD is early and its
   chapter structure is still moving. Don't add a chapter plan or infer thesis
   structure beyond what's already written.

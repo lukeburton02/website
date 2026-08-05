@@ -6,35 +6,38 @@ nocite: |
 ---
 
 ::: {.lede}
-Two connected strands: modelling the behavioural drivers of epidemic dynamics,
-and evaluating whether the interventions built on them are cost-effective.
+Two separate strands of work. Almost all of the week goes to the doctoral
+project on the behavioural drivers of epidemic dynamics. A much smaller strand
+is the economic evaluation of blood-borne virus screening.
 :::
 
 ## Interests
 
 - Infectious disease modelling
-- Epidemiological modelling
 - Machine learning
-- Health economics
-- Cost-utility modelling
+- Social contact, mobility and attitude data
 - Economic evaluation
 
-## Projects
+## The doctoral project
 
 ### Behavioural drivers of epidemic dynamics
 
-The doctoral project. Social contact, mobility and attitude data carry signal
-about how people actually behave during an outbreak — who mixes with whom, how
-that changes under pressure, and how quickly it reverts. The question is whether
-that signal can be used not just to explain epidemic dynamics after the fact,
-but to forecast them.
+Social contact, mobility and attitude data carry signal about how people
+actually behave during an outbreak — who mixes with whom, how that changes under
+pressure, and how quickly it reverts. The question is whether that signal can be
+used not just to explain epidemic dynamics after the fact, but to help
+anticipate them.
+
+This is the main work, and everything below it is smaller.
+
+## Alongside it
 
 ### Economic evaluation of blood-borne virus screening
 
-NIHR-funded work on whether blood-borne virus testing interventions are worth
-what they cost: coding hepatitis B progression models to evaluate emergency
-department opt-out testing, assessing TB IGRA testing in high-risk groups, and
-micro-costing digitally enhanced BBV testing.
+A separate, NIHR-funded project, and a much smaller part of the week. It asks
+whether blood-borne virus testing interventions are worth what they cost: hepatitis B
+progression modelling for emergency department opt-out testing, TB IGRA testing
+in high-risk groups, and micro-costing of digitally enhanced testing.
 
 ### Vaccine responses and vaccine equity
 
@@ -43,15 +46,13 @@ influenza, and modelling vaccine equity and trachoma resurgence.
 
 ## Collaborations
 
-Ongoing collaborations with the following institutions. These are research
-partnerships, not employment:
+A few groups I work with on the above — collaborators, not employers.
 
 {{< include _generated/collaborations.md >}}
 
 ## Publications
 
-Everything in `data/publications.bib` is listed here automatically — the file is
-currently empty, so nothing appears below yet.
+Listed here automatically.
 
 ::: {#refs}
 :::

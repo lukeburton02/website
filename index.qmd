@@ -16,8 +16,8 @@ pagetitle: "About"
 {{< var personal.tagline >}}
 :::
 
-My doctoral work asks how social contact, mobility and attitude data can be used
-to understand and forecast the behavioural drivers of epidemic dynamics. It
+My PhD asks how social contact, mobility and attitude data can be used
+to understand and help anticipate the behavioural drivers of epidemic dynamics. It
 builds on a background in mathematics and health data science, and on earlier
 work using branching process models to estimate the probability that an
 introduction becomes a major epidemic.
@@ -27,7 +27,7 @@ evaluation of blood-borne virus screening interventions: coding
 hepatitis B progression models, evaluating TB IGRA testing in high-risk groups,
 and micro-costing digitally enhanced BBV testing.
 
-Alongside the PhD:
+I am based in the {{< var personal.affiliation >}}. Alongside that:
 
 {{< include _generated/current-positions.md >}}
 
