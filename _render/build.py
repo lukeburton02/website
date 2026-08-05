@@ -1,8 +1,18 @@
 #!/usr/bin/env python3
 """Turn data/*.yml into the bits of the site that display personal details.
 
-Run automatically by Quarto as a `pre-render` step (see _quarto.yml); run it by
-hand with `python3 _render/build.py` if you want to inspect the output.
+Run automatically by Quarto as a `pre-render` step (see _quarto.yml), which
+keeps the output fresh as you edit.
+
+Run it by hand once after a fresh clone, before the first render:
+
+    python3 _render/build.py
+
+That first run is not optional. Quarto expands {{< include >}} directives while
+building the project context, which happens before pre-render scripts execute —
+so on a checkout with no _generated/ directory, rendering fails before this
+script ever gets a chance to create it. The CI workflow does the same thing as
+an explicit step for the same reason.
 
 Writes two things, both gitignored because both are derived:
 
