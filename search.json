@@ -4,7 +4,7 @@
     "href": "writing.html",
     "title": "Writing",
     "section": "",
-    "text": "Essays, notes, and things that aren’t papers.\n\nOccasional blog posts at laburton.substack.com, on whatever I’ve been interested in, partly to get better at writing."
+    "text": "Essays, notes, and things that aren’t papers.\n\nOccasional blog posts at laburton.substack.com, on whatever I’ve been interested in."
   },
   {
     "objectID": "now.html",
@@ -25,7 +25,7 @@
     "href": "now.html#elsewhere",
     "title": "Now",
     "section": "Elsewhere",
-    "text": "Elsewhere\nRepresenting early career researchers at the Centre for the Mathematical Modelling of Infectious Diseases, which mostly means helping organise the monthly meetings we hold between ourselves.\nAlso pulls pints behind the LSHTM bar — a few hundred of them so far.\nI write the occasional blog post on Substack, usually about something I’ve been interested in, partly to get better at writing."
+    "text": "Elsewhere\nRepresenting early career researchers at the Centre for the Mathematical Modelling of Infectious Diseases, which mostly means helping organise the monthly meetings we hold between ourselves.\nI also pull pints behind the LSHTM bar — 301 so far.\nI write the occasional blog post on Substack, to get better at writing."
   },
   {
     "objectID": "cv.html",
@@ -88,7 +88,7 @@
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "Two separate strands of work. Almost all of the week goes to the doctoral project on the behavioural drivers of epidemic dynamics. A much smaller strand is the economic evaluation of blood-borne virus screening."
+    "text": "Two strands of work: a PhD project on the behavioural drivers of epidemic dynamics, and, part-time, the economic evaluation of blood-borne virus screening."
   },
   {
     "objectID": "research.html#interests",
@@ -98,25 +98,32 @@
     "text": "Interests\n\nInfectious disease modelling\nMachine learning\nSocial contact, mobility and attitude data\nEconomic evaluation"
   },
   {
-    "objectID": "research.html#the-doctoral-project",
-    "href": "research.html#the-doctoral-project",
+    "objectID": "research.html#phd-project",
+    "href": "research.html#phd-project",
     "title": "Research",
-    "section": "The doctoral project",
-    "text": "The doctoral project\n\nBehavioural drivers of epidemic dynamics\nSocial contact, mobility and attitude data carry signal about how people actually behave during an outbreak — who mixes with whom, how that changes under pressure, and how quickly it reverts. The question is whether that signal can be used not just to explain epidemic dynamics after the fact, but to help anticipate them.\nThis is the main work, and everything below it is smaller."
+    "section": "PhD project",
+    "text": "PhD project\n\nBehavioural drivers of epidemic dynamics\nSocial contact, mobility and attitude data carry signal about how people actually behave during an outbreak — who mixes with whom, how that changes under pressure, and how quickly it reverts. The question is whether that signal can be used not just to explain epidemic dynamics after the fact, but to help anticipate them."
   },
   {
     "objectID": "research.html#alongside-it",
     "href": "research.html#alongside-it",
     "title": "Research",
     "section": "Alongside it",
-    "text": "Alongside it\n\nEconomic evaluation of blood-borne virus screening\nA separate, NIHR-funded project, and a much smaller part of the week. It asks whether blood-borne virus testing interventions are worth what they cost: hepatitis B progression modelling for emergency department opt-out testing, TB IGRA testing in high-risk groups, and micro-costing of digitally enhanced testing.\n\n\nVaccine responses and vaccine equity\nEarlier work using machine learning to understand vaccine responses to influenza, and modelling vaccine equity and trachoma resurgence."
+    "text": "Alongside it\n\nEconomic evaluation of blood-borne virus screening\nAn NIHR-funded project asking whether blood-borne virus testing interventions are worth what they cost: hepatitis B progression modelling for emergency department opt-out testing, for which I am building a reproducible pipeline; TB IGRA testing in high-risk groups; and micro-costing of digitally enhanced testing."
+  },
+  {
+    "objectID": "research.html#earlier-work",
+    "href": "research.html#earlier-work",
+    "title": "Research",
+    "section": "Earlier work",
+    "text": "Earlier work\n\nVaccine responses and vaccine equity\nFinished work: machine learning to understand vaccine responses to influenza, and modelling of vaccine equity and trachoma resurgence."
   },
   {
     "objectID": "research.html#collaborations",
     "href": "research.html#collaborations",
     "title": "Research",
     "section": "Collaborations",
-    "text": "Collaborations\nA few groups I work with on the above — collaborators, not employers.\n\n\nUniversity of Bristol — Mathematical modelling team, on cost-effectiveness of emergency department blood-borne virus opt-out testing.\nUniversity of Leicester — GPs and clinical staff, who help with data and interviews and answer costing questions for the blood-borne virus work.\nUK Health Security Agency (UKHSA) — Mainly on the PhD, on the policy-relevant side, held through the Imperial visiting post. Separately and much more marginally, a data source for the blood-borne virus work, with no active involvement on that side."
+    "text": "Collaborations\nA few groups I work with on the above.\n\n\nUniversity of Bristol — Mathematical modelling team, on cost-effectiveness of emergency department blood-borne virus opt-out testing.\nUniversity of Leicester — GPs and clinical staff, who help with data and interviews and answer costing questions for the blood-borne virus work.\nUK Health Security Agency (UKHSA) — Mainly on the PhD, on the policy-relevant side. Separately and much more marginally, a data source for the blood-borne virus work."
   },
   {
     "objectID": "research.html#publications",
