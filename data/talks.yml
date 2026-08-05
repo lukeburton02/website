@@ -11,13 +11,12 @@
 # Entries are sorted newest-first at build time; order here doesn't matter.
 # ---------------------------------------------------------------------------
 
-talks:
-  - date: "2025-06-14"
-    title: "PLACEHOLDER — A Talk Title Describing the Work"
-    venue: "PLACEHOLDER — Annual Conference of Some Society, Somewhere"
-    slides_url: "https://example.com/placeholder-slides.pdf"
+# Empty: no talks were listed on any of the fetched profile pages, and inventing
+# them would put false claims on a public site. Add real entries in the form:
+#
+#   - date: "2026-06-14"
+#     title: "The Title of the Talk"
+#     venue: "Conference or Seminar Series, City"
+#     slides_url: "https://example.com/slides.pdf"   # or omit the key entirely
 
-  - date: "2025-02-03"
-    title: "PLACEHOLDER — An Earlier Talk, With No Slides Online"
-    venue: "PLACEHOLDER — Departmental Seminar, University of Somewhere"
-    slides_url: null
+talks: []

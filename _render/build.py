@@ -177,6 +177,20 @@ def build_roles(cv: dict) -> None:
     write("cv-roles.md", "\n\n".join(blocks) if blocks else placeholder("roles"))
 
 
+def build_service(cv: dict) -> None:
+    entries = cv.get("service") or []
+    blocks = [
+        entry_block(
+            date_range(e.get("start"), e.get("end")),
+            as_text(e.get("title")),
+            as_text(e.get("organisation")),
+            as_text(e.get("notes")),
+        )
+        for e in entries
+    ]
+    write("cv-service.md", "\n\n".join(blocks) if blocks else placeholder("service roles"))
+
+
 def build_awards(cv: dict) -> None:
     entries = cv.get("awards") or []
     blocks = [
@@ -198,6 +212,45 @@ def build_skills(cv: dict) -> None:
         items = ", ".join(as_text(i) for i in (group.get("items") or []) if as_text(i))
         blocks.append(entry_block(as_text(group.get("category")), "", "", items))
     write("cv-skills.md", "\n\n".join(blocks) if blocks else placeholder("skills"))
+
+
+def build_current_positions(cv: dict) -> None:
+    """Roles with no end date — the ones held right now. Used on the About page.
+
+    Kept as generated output rather than prose in index.qmd so that no job
+    title or institution is ever hardcoded in a .qmd file.
+    """
+    current = [r for r in (cv.get("roles") or []) if not as_text(r.get("end"))]
+    lines = []
+    for role in current:
+        title = as_text(role.get("title"))
+        org = as_text(role.get("organisation"))
+        note = as_text(role.get("notes"))
+        line = f"- **{title}**" if title else "-"
+        if org:
+            line += f", {org}"
+        if note:
+            line += f" — {note}"
+        lines.append(line)
+    write(
+        "current-positions.md",
+        "\n".join(lines) if lines else "<!-- no current roles in data/cv.yml -->",
+    )
+
+
+def build_collaborations(cv: dict) -> None:
+    """Institutions collaborated with but not employed by — the heading in
+    research.qmd states that distinction explicitly."""
+    entries = cv.get("collaborations") or []
+    lines = []
+    for entry in entries:
+        org = as_text(entry.get("organisation"))
+        note = as_text(entry.get("notes"))
+        lines.append(f"- {org}" + (f" — {note}" if note else ""))
+    write(
+        "collaborations.md",
+        "\n".join(lines) if lines else "<!-- no collaborations in data/cv.yml -->",
+    )
 
 
 def build_contact(cv: dict) -> None:
@@ -244,7 +297,15 @@ def build_variables(cv: dict) -> None:
     variables = {
         "personal": {
             key: as_text(personal.get(key))
-            for key in ("name", "role", "affiliation", "tagline", "email", "location")
+            for key in (
+                "name",
+                "role",
+                "affiliation",
+                "tagline",
+                "email",
+                "location",
+                "aside",
+            )
         }
     }
     with (ROOT / "_variables.yml").open("w", encoding="utf-8") as fh:
@@ -260,8 +321,11 @@ def main() -> None:
     build_variables(cv)
     build_education(cv)
     build_roles(cv)
+    build_service(cv)
     build_awards(cv)
     build_skills(cv)
+    build_current_positions(cv)
+    build_collaborations(cv)
     build_contact(cv)
     build_talks()
 

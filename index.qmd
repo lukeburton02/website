@@ -6,14 +6,22 @@ title: "About"
 {{< var personal.tagline >}}
 :::
 
-I'm **{{< var personal.name >}}**, {{< var personal.role >}} at {{< var personal.affiliation >}}, based in {{< var personal.location >}}.
+I'm **{{< var personal.name >}}**, a {{< var personal.role >}} in the {{< var personal.affiliation >}}.
 
-PLACEHOLDER — two or three sentences on what you work on and why it matters. This
-is the paragraph most visitors read; keep it plain and specific. Everything
-between the braces above is pulled from `data/cv.yml`, so your name, role and
-affiliation only ever need changing in one place.
+My doctoral work asks how social contact, mobility and attitude data can be used
+to understand and forecast the behavioural drivers of epidemic dynamics — the
+messy, human half of why outbreaks unfold the way they do. It builds on a
+background in mathematics and health data science, and on earlier work using
+branching process models to estimate the probability that an introduction
+becomes a major epidemic.
 
-PLACEHOLDER — a second paragraph, if you want one: background, current
-preoccupations, or what you're looking for. Otherwise delete it.
+Alongside that I work in health economics, on cost-utility modelling and
+economic evaluation of blood-borne virus screening interventions: coding
+hepatitis B progression models, evaluating TB IGRA testing in high-risk groups,
+and micro-costing digitally enhanced BBV testing.
+
+Alongside the PhD:
+
+{{< include _generated/current-positions.md >}}
 
 {{< include _generated/contact-links.md >}}

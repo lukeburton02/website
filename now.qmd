@@ -6,18 +6,28 @@ title: "Now"
 What I'm working on at the moment.
 :::
 
-PLACEHOLDER — a [now page](https://nownownow.com/about) is a snapshot of your
-current focus, written in the present tense and rewritten whenever it stops
-being true. Unlike the About page, it's allowed to go stale between updates.
-
 ## Research
 
-PLACEHOLDER — the project or chapter actually in front of you right now.
+Working out how social contact, mobility and attitude data can be used to
+understand and forecast the behavioural drivers of epidemic dynamics — the first
+substantive stretch of the PhD.
 
-## Reading
-
-PLACEHOLDER — what's on the desk.
+Alongside it, hepatitis B progression models for evaluating emergency department
+blood-borne virus opt-out testing, and micro-costing of digitally enhanced BBV
+testing.
 
 ## Elsewhere
 
-PLACEHOLDER — teaching, organising, non-academic things, or delete this section.
+Representing early career researchers at the Centre for the Mathematical
+Modelling of Infectious Diseases, which mostly means organising the monthly
+meetings and making sure people actually turn up to them.
+
+{{< var personal.aside >}}
+
+Occasional writing goes up on [Substack](https://laburton.substack.com).
+
+<!--
+A now page (https://nownownow.com/about) is a snapshot of current focus, written
+in the present tense and rewritten whenever it stops being true. Unlike the
+About page, it's allowed to go stale between updates — that's the point.
+-->

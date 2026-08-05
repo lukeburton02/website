@@ -6,17 +6,20 @@ title: "Writing"
 Essays, notes, and things that aren't papers.
 :::
 
-PLACEHOLDER — an intro line, or nothing at all.
-
-## PLACEHOLDER — Piece Title
-
-PLACEHOLDER — a sentence on what it is, with a [link](https://example.com) out
-to wherever it lives. Repeat for each piece.
+I write occasionally at [**laburton.substack.com**](https://laburton.substack.com).
 
 <!--
-When you have enough posts to want them managed rather than listed by hand,
-turn this page into a Quarto listing: create a posts/ directory of .qmd files
-and add to the front matter above —
+To surface individual pieces here rather than just linking out, add them as a
+list:
+
+  ## The Title of the Piece
+
+  A sentence on what it is, with a [link](https://example.com) out to wherever
+  it lives.
+
+When there are enough to want them managed rather than listed by hand, turn
+this into a Quarto listing: create a posts/ directory of .qmd files and add to
+the front matter above —
 
   listing:
     contents: posts

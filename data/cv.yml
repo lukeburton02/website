@@ -1,79 +1,156 @@
 # ---------------------------------------------------------------------------
 # Single source of truth for everything about you that the site displays.
 #
-# Nothing in this file is hardcoded anywhere in the .qmd pages: cv.qmd and the
-# identity lines on index.qmd are generated from here by _render/build.py.
-# Edit this file, not the pages.
+# Nothing in this file is hardcoded anywhere in the .qmd pages: cv.qmd, the
+# identity lines on index.qmd and the positions/collaborations lists are all
+# generated from here by _render/build.py. Edit this file, not the pages.
 #
-# Every entry below is a WORKED PLACEHOLDER EXAMPLE showing the expected
-# fields. Replace the values; keep the shape.
+# Sources: LSHTM profile page, UCL profile page, LinkedIn (Aug 2026).
 #
 # Optional: create data/cv.private.yml (gitignored) with the same structure to
-# overlay private details — e.g. a real email or phone — for local renders.
+# overlay private details for local renders.
 # ---------------------------------------------------------------------------
 
 personal:
-  name: "PLACEHOLDER — Your Name"
-  # `role` and `affiliation` are the strings used wherever your position is
-  # displayed (About page intro, CV header). Change them once, here.
-  role: "PLACEHOLDER — Doctoral Researcher"
-  affiliation: "PLACEHOLDER — Department of Something, University of Somewhere"
-  # Short one-line description used under the heading on the About page.
-  tagline: "PLACEHOLDER — I study one interesting thing and occasionally write about it."
-  email: "placeholder@example.ac.uk"
-  location: "PLACEHOLDER — Somewhere, UK"
-  # Profile links. Any key/value pair here becomes a link; drop the ones you
-  # don't use. `url` may be a mailto:, https:, or anything else.
+  name: "Luke Burton"
+  # "PhD Researcher" is the wording your own UCL profile uses. LSHTM renders it
+  # formally as "Research Student - MPhil/PhD - Epidemiology & Population Health".
+  role: "PhD Researcher"
+  affiliation: "Department of Infectious Disease Epidemiology and Dynamics, London School of Hygiene & Tropical Medicine"
+  tagline: "Understanding and predicting the behavioural drivers of epidemic dynamics — and evaluating whether the interventions we build on them are worth the money."
+  # Primary contact. The UCL and Imperial addresses are deliberately not listed
+  # anywhere on the site. Move this to data/cv.private.yml if you'd rather it
+  # weren't in a tracked file.
+  email: "Luke.Burton1@student.lshtm.ac.uk"
+  location: "London, UK"
+  # Rendered on the Now page only — kept out of cv.qmd so it never appears on
+  # the professional CV.
+  aside: "Also pulls pints behind the LSHTM bar. 301 served, at last count."
   links:
     - label: "Email"
-      url: "mailto:placeholder@example.ac.uk"
-    - label: "Google Scholar"
-      url: "https://scholar.google.com/citations?user=PLACEHOLDER"
+      url: "mailto:Luke.Burton1@student.lshtm.ac.uk"
+    - label: "LSHTM profile"
+      url: "https://www.lshtm.ac.uk/aboutus/people/burton.luke"
+    - label: "UCL profile"
+      url: "https://profiles.ucl.ac.uk/108469-luke-burton"
     - label: "ORCID"
-      url: "https://orcid.org/0000-0000-0000-0000"
+      url: "https://orcid.org/0009-0004-3168-0413"
+    - label: "Substack"
+      url: "https://laburton.substack.com"
+    - label: "LinkedIn"
+      url: "https://www.linkedin.com/in/luke-burton-7563511b1/"
     - label: "GitHub"
       url: "https://github.com/lukeburton02"
+    # - label: "Google Scholar"  # Not yet — add when you have a profile
+    #   url: ""
 
 # ---------------------------------------------------------------------------
 # Education. `end: null` renders as "Present".
-# Dates are plain strings — quote them so YAML doesn't reinterpret them.
+# Dates are quoted strings so YAML doesn't reinterpret them.
 # ---------------------------------------------------------------------------
 education:
-  - qualification: "PLACEHOLDER — PhD in Subject"
-    institution: "PLACEHOLDER — University of Somewhere"
-    start: "2024"
+  - qualification: "PhD, Epidemiology"
+    institution: "London School of Hygiene & Tropical Medicine"
+    start: "Sep 2025"
     end: null
-    notes: "Thesis: *A Placeholder Title That Says Something About the Work*. Supervised by Prof. Placeholder."
+    notes: "Thesis: *Understanding and predicting behavioural drivers of epidemic dynamics*. Department of Infectious Disease Epidemiology and Dynamics. Expected completion 2029."
+
+  - qualification: "MSc Health Data Science"
+    institution: "London School of Hygiene & Tropical Medicine"
+    start: "Sep 2024"
+    end: "Sep 2025"
+    notes: "Distinction. Thesis: *Using machine learning to understand vaccine responses to influenza*."
+
+  - qualification: "MMath Mathematics"
+    institution: "University of Oxford"
+    start: "Sep 2020"
+    end: "Jun 2024"
+    notes: "Merit. Thesis: *Branching process models for estimating the probability of a major infectious disease epidemic*."
 
 # ---------------------------------------------------------------------------
-# Roles: positions, appointments, employment, teaching.
+# Roles: positions, appointments, employment.
+# The PhD itself lives under `education` above, not here.
 # ---------------------------------------------------------------------------
 roles:
-  - title: "PLACEHOLDER — Research Assistant"
-    organisation: "PLACEHOLDER — Some Research Centre"
-    start: "2023"
-    end: "2024"
-    notes: "One or two lines on what you actually did. Markdown works here."
+  - title: "Visiting Researcher"
+    organisation: "Imperial College London"
+    start: "Sep 2025"
+    end: null
+    notes: "Held as part of the PhD."
+
+  - title: "Research Assistant, Health Economics (part-time)"
+    organisation: "University College London"
+    start: "Oct 2025"
+    end: null
+    notes: "Infectious Disease Informatics. NIHR-funded work on cost-utility modelling and economic evaluation of blood-borne virus screening interventions."
+
+  - title: "Disease Modelling Intern"
+    organisation: "Big Data Institute"
+    start: "Jul 2024"
+    end: "Sep 2024"
+    notes: "Vaccine equity and trachoma resurgence."
+
+  - title: "Data Science Intern"
+    organisation: "esure Group"
+    start: "Jul 2023"
+    end: "Sep 2023"
+    notes: "Predicting crash rates and quoted premiums."
+
+  # Pre-academic industry placement — delete if you'd rather the CV started at
+  # the Big Data Institute.
+  - title: "IT Consulting Intern"
+    organisation: "Aire Logic"
+    start: "Jul 2021"
+    end: "Aug 2021"
+    notes: "Proof-of-concept medical rostering system."
+
+# ---------------------------------------------------------------------------
+# Academic service and citizenship.
+# ---------------------------------------------------------------------------
+service:
+  - title: "Early Career Researcher Representative"
+    organisation: "Centre for the Mathematical Modelling of Infectious Diseases, LSHTM"
+    start: "Mar 2026"
+    end: null
+    notes: "Organising and facilitating monthly meetings between researchers."
+
+# ---------------------------------------------------------------------------
+# Institutions you collaborate with but are NOT employed by. Rendered under a
+# heading that says exactly that, so the distinction is never blurred.
+# ---------------------------------------------------------------------------
+collaborations:
+  - organisation: "University of Bristol"
+    notes: "Cost-effectiveness of emergency department blood-borne virus opt-out testing."
+  - organisation: "University of Leicester"
+    notes: "Cost-effectiveness of TB screening and micro-costing of digitally enhanced BBV testing."
+  - organisation: "UK Health Security Agency (UKHSA)"
+    notes: "Blood-borne virus testing evaluation, and epidemic dynamics work held through the Imperial visiting post."
 
 # ---------------------------------------------------------------------------
 # Awards, grants, scholarships, prizes.
+# Empty — none appeared on any source. Degree classifications are recorded in
+# the education notes above instead. Add entries in the form:
+#   - title: "..."
+#     awarder: "..."
+#     year: "2024"
+#     notes: ""
 # ---------------------------------------------------------------------------
-awards:
-  - title: "PLACEHOLDER — Departmental Prize for Something"
-    awarder: "PLACEHOLDER — University of Somewhere"
-    year: "2023"
-    notes: "Optional one-line context. Delete the key if you don't want a note."
+awards: []
 
 # ---------------------------------------------------------------------------
-# Skills, grouped by category. `items` is a plain list of strings.
+# Skills, grouped by category.
 # ---------------------------------------------------------------------------
 skills:
-  - category: "PLACEHOLDER — Methods"
+  - category: "Research interests"
     items:
-      - "Placeholder method one"
-      - "Placeholder method two"
-  - category: "PLACEHOLDER — Software"
-    items:
-      - "R"
-      - "Python"
-      - "Quarto"
+      - "Infectious disease modelling"
+      - "Epidemiological modelling"
+      - "Machine learning"
+      - "Health economics"
+      - "Cost-utility modelling"
+      - "Economic evaluation"
+  # PLACEHOLDER — no software or languages list appeared on any source.
+  # - category: "Software"
+  #   items:
+  #     - "R"
+  #     - "Python"

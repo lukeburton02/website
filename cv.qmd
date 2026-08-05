@@ -24,6 +24,10 @@ edit the data file instead.
 
 {{< include _generated/cv-roles.md >}}
 
+## Service
+
+{{< include _generated/cv-service.md >}}
+
 ## Awards
 
 {{< include _generated/cv-awards.md >}}

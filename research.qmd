@@ -6,23 +6,47 @@ nocite: |
 ---
 
 ::: {.lede}
-PLACEHOLDER — one or two lines framing your research interests as a whole.
+Two connected strands: modelling the behavioural drivers of epidemic dynamics,
+and evaluating whether the interventions built on them are cost-effective.
 :::
 
 ## Interests
 
-PLACEHOLDER — a short paragraph, or a list of themes. Replace with your own.
-
-- PLACEHOLDER — first research theme
-- PLACEHOLDER — second research theme
+- Infectious disease modelling
+- Epidemiological modelling
+- Machine learning
+- Health economics
+- Cost-utility modelling
+- Economic evaluation
 
 ## Projects
 
-### PLACEHOLDER — Project Title
+### Behavioural drivers of epidemic dynamics
 
-PLACEHOLDER — what the project asks, how you're going about it, and where it's
-got to. Repeat the heading and paragraph for each project, or delete the
-section entirely if the publication list does the job.
+The doctoral project. Social contact, mobility and attitude data carry signal
+about how people actually behave during an outbreak — who mixes with whom, how
+that changes under pressure, and how quickly it reverts. The question is whether
+that signal can be used not just to explain epidemic dynamics after the fact,
+but to forecast them.
+
+### Economic evaluation of blood-borne virus screening
+
+NIHR-funded work on whether blood-borne virus testing interventions are worth
+what they cost: coding hepatitis B progression models to evaluate emergency
+department opt-out testing, assessing TB IGRA testing in high-risk groups, and
+micro-costing digitally enhanced BBV testing.
+
+### Vaccine responses and vaccine equity
+
+Earlier work using machine learning to understand vaccine responses to
+influenza, and modelling vaccine equity and trachoma resurgence.
+
+## Collaborations
+
+Ongoing collaborations with the following institutions. These are research
+partnerships, not employment:
+
+{{< include _generated/collaborations.md >}}
 
 ## Publications
 
