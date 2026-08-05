@@ -29,7 +29,7 @@ personal:
   headshot: "images/headshot.jpg"
   # Rendered on the Now page only — kept out of cv.qmd so it never appears on
   # the professional CV.
-  aside: "Also pulls pints behind the LSHTM bar — a few hundred of them so far."
+  aside: "I also pull pints behind the LSHTM bar — 301 so far."
   links:
     - label: "Email"
       url: "mailto:Luke.Burton1@student.lshtm.ac.uk"
@@ -146,7 +146,7 @@ collaborations:
   - organisation: "University of Leicester"
     notes: "GPs and clinical staff, who help with data and interviews and answer costing questions for the blood-borne virus work."
   - organisation: "UK Health Security Agency (UKHSA)"
-    notes: "Mainly on the PhD, on the policy-relevant side, held through the Imperial visiting post. Separately and much more marginally, a data source for the blood-borne virus work, with no active involvement on that side."
+    notes: "Mainly on the PhD, on the policy-relevant side. Separately and much more marginally, a data source for the blood-borne virus work."
 
 # ---------------------------------------------------------------------------
 # Awards, grants, scholarships, prizes. Add entries in the form:

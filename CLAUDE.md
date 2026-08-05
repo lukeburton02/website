@@ -160,12 +160,25 @@ Named *research groups* follow a subtler line:
 
 Institutions (Bristol, Leicester, UKHSA) are fine to name.
 
-### Proportion matters
+### Proportion: convey it once, through structure
 
 The LSHTM PhD is full-time; the UCL health-economics work is one day a week.
-Pages must read that way — he pushed back specifically on the two being given
-equal billing. Don't let the smaller strand grow to match the larger one just
-because there's more concrete detail available about it.
+The pages should reflect that — but say it **once**, plainly, and let the page
+structure carry the rest.
+
+He pushed back in both directions here, so aim for the middle: first when the
+two strands were given equal billing, then again when the fix over-corrected
+into "almost all of the week goes to… a much smaller strand is…", which he
+found laboured. A single mention that the second is part-time is enough.
+
+Don't let the smaller strand grow to match the larger one just because there
+is more concrete detail available about it.
+
+### Keep specific facts specific
+
+Plain prose does not mean vague prose. When he gives an exact figure or detail,
+keep it exactly — softening "301 pints" to "a few hundred" was wrong and he
+asked for the number back. Strip the framing around a detail, never the detail.
 - Research pages stay at a high level by choice: the PhD is early and its
   chapter structure is still moving. Don't add a chapter plan or infer thesis
   structure beyond what's already written.

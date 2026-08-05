@@ -25,7 +25,7 @@ monthly meetings we hold between ourselves.
 {{< var personal.aside >}}
 
 I write the occasional blog post on [Substack](https://laburton.substack.com),
-usually about something I've been interested in, partly to get better at writing.
+to get better at writing.
 
 <!--
 A now page (https://nownownow.com/about) is a snapshot of current focus, written
