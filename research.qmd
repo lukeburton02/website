@@ -32,11 +32,10 @@ anticipate them.
 
 ### Economic evaluation of blood-borne virus screening
 
-An NIHR-funded project asking whether blood-borne virus testing interventions
-are worth what they cost: hepatitis B progression modelling for emergency
-department opt-out testing, for which I am building a reproducible pipeline; TB
-IGRA testing in high-risk groups; and micro-costing of digitally enhanced
-testing.
+An NIHR-funded project on the cost-effectiveness of blood-borne virus testing
+interventions: hepatitis B progression modelling for emergency department
+opt-out testing; TB IGRA testing in high-risk groups; and micro-costing of
+digitally enhanced testing.
 
 ## Earlier work
 

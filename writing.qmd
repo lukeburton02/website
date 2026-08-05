@@ -3,7 +3,7 @@ title: "Writing"
 ---
 
 ::: {.lede}
-Essays, notes, and things that aren't papers.
+Posts, notes, and things that aren't papers.
 :::
 
 Occasional blog posts at [**laburton.substack.com**](https://laburton.substack.com),

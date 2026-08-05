@@ -158,12 +158,14 @@ collaborations:
 # education entries above.
 # ---------------------------------------------------------------------------
 awards:
-  - title: "Health Data Science prize"
+  - title: "Health Data Science Prize"
     awarder: "London School of Hygiene & Tropical Medicine"
     # Awarded for the 2024–25 MSc year; recorded as the year of completion so
     # the date column stays a single point, as elsewhere in this section.
     year: "2025"
-    notes: "Highest GPA in the cohort."
+    # Wording lifted from the award letter, which states the criterion rather
+    # than making a claim about the recipient. Keep it in that voice.
+    notes: "Awarded annually to the student with the highest numerical GPA on the MSc."
 
 # ---------------------------------------------------------------------------
 # Skills, grouped by category.
