@@ -1,12 +1,20 @@
 ---
-title: "About"
+pagetitle: "About"
 ---
+
+::: {.hero}
+::: {.hero-text}
+# {{< var personal.name >}} {.hero-name .unnumbered}
+
+[{{< var personal.role >}} · {{< var personal.affiliation >}}]{.hero-role}
+:::
+
+{{< include _generated/headshot.md >}}
+:::
 
 ::: {.lede}
 {{< var personal.tagline >}}
 :::
-
-I'm **{{< var personal.name >}}**, a {{< var personal.role >}} in the {{< var personal.affiliation >}}.
 
 My doctoral work asks how social contact, mobility and attitude data can be used
 to understand and forecast the behavioural drivers of epidemic dynamics — the

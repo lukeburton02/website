@@ -1,71 +1,206 @@
 /*-- scss:defaults --*/
 
-// Bootstrap/Quarto variables. These are consumed before the theme compiles, so
-// anything set here changes the theme itself rather than patching it after.
+// ===========================================================================
+// PALETTE AND TYPE — change the whole site from these eight values.
+// Everything below derives from them; nothing else hardcodes a colour.
+// ===========================================================================
 
-$font-family-sans-serif: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif !default;
-$font-family-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif !default;
+$accent:        #6f8779 !default;   // sage — links, rules, motifs
+$bg:            #f2f5f3 !default;   // page background
+$surface:       #ffffff !default;   // navbar and raised surfaces
+$ink:           #2b3033 !default;   // body text
+$ink-muted:     #737d80 !default;   // secondary text, dates, captions
+
+$font-display:  "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif !default;
+$font-body:     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 $font-size-root: 17px !default;
-$line-height-base: 1.6 !default;
 
-$primary: #1f4e79 !default;
-$body-color: #23272b !default;
-$body-bg: #ffffff !default;
-$link-color: $primary !default;
+// --- Derived values --------------------------------------------------------
+// Tints of the palette above. Adjust the mix ratios, not the colours.
 
-$headings-font-weight: 600 !default;
-$h1-font-size: 1.9rem !default;
-$h2-font-size: 1.3rem !default;
-$h3-font-size: 1.1rem !default;
+$rule:            mix($accent, $bg, 22%) !default;   // hairline rules
+$motif:           mix($accent, $bg, 55%) !default;   // background artwork
+$motif-opacity:   0.30 !default;                     // how present the artwork is
+$grid:            mix($accent, $bg, 12%) !default;   // graph-paper grid
+$content-measure: 44rem !default;
 
-$navbar-bg: $body-bg !default;
-$navbar-fg: $body-color !default;
+// --- Bootstrap / Quarto overrides ------------------------------------------
 
-// Local variables used by the rules below.
-$muted: #6c757d;
-$rule: #e6e8eb;
-$content-measure: 42rem;
+$body-bg:                 $bg;
+$body-color:              $ink;
+$primary:                 $accent;
+$link-color:              $accent;
+$font-family-sans-serif:  $font-body;
+$headings-font-family:    $font-display;
+$headings-font-weight:    500;
+$line-height-base:        1.62;
+
+$h1-font-size: 2.6rem;
+$h2-font-size: 1.45rem;
+$h3-font-size: 1.12rem;
+
+$navbar-bg: $surface;
+$navbar-fg: $ink;
 
 
 /*-- scss:rules --*/
 
-// Applied after the theme, so these win.
+// ===========================================================================
+// Background artwork — epidemic curves and a contact network, drawn as inline
+// SVG data URIs so the palette threads through and nothing is fetched over the
+// network. Colours are interpolated as rgb() to avoid escaping "#" in a URI.
+// ===========================================================================
 
-.navbar {
-  border-bottom: 1px solid $rule;
+@function motif-rgb($c) {
+  @return "rgb(#{round(red($c))},#{round(green($c))},#{round(blue($c))})";
 }
+
+// Overlapping epidemic curves, echoing the mockup's right-hand motif.
+@function curves-svg($c, $opacity) {
+  $s: motif-rgb($c);
+  @return url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 420' preserveAspectRatio='none'%3E%3Cg fill='none' stroke='#{$s}' stroke-width='1.6' opacity='#{$opacity}'%3E%3Cpath d='M0,420 C170,420 205,55 330,55 C455,55 490,420 660,420'/%3E%3Cpath d='M90,420 C270,420 310,130 450,130 C590,130 630,420 810,420'/%3E%3Cpath d='M210,420 C390,420 430,195 570,195 C710,195 750,420 900,420'/%3E%3Cpath d='M330,420 C470,420 505,265 620,265 C735,265 770,420 900,420'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+// Contact network — nodes and edges, echoing the mockup's left-hand motif.
+@function network-svg($c, $opacity) {
+  $s: motif-rgb($c);
+  @return url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cg stroke='#{$s}' fill='#{$s}' opacity='#{$opacity}'%3E%3Cg stroke-width='1' fill='none'%3E%3Cpath d='M300,300 L150,180 M300,300 L470,205 M300,300 L205,455 M300,300 L455,430 M300,300 L330,120 M150,180 L205,455 M470,205 L455,430 M150,180 L60,300 M470,205 L560,330 M205,455 L330,545 M455,430 L330,545 M330,120 L470,205 M330,120 L150,180 M60,300 L205,455 M560,330 L455,430'/%3E%3C/g%3E%3Ccircle cx='300' cy='300' r='9'/%3E%3Ccircle cx='150' cy='180' r='6'/%3E%3Ccircle cx='470' cy='205' r='7'/%3E%3Ccircle cx='205' cy='455' r='6'/%3E%3Ccircle cx='455' cy='430' r='7'/%3E%3Ccircle cx='330' cy='120' r='5'/%3E%3Ccircle cx='60' cy='300' r='4'/%3E%3Ccircle cx='560' cy='330' r='5'/%3E%3Ccircle cx='330' cy='545' r='4'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+body {
+  background-color: $bg;
+  background-image:
+    curves-svg($motif, $motif-opacity),
+    network-svg($motif, $motif-opacity * 0.75),
+    // faint graph paper
+    linear-gradient(to right, $grid 1px, transparent 1px),
+    linear-gradient(to bottom, $grid 1px, transparent 1px);
+  background-repeat: no-repeat, no-repeat, repeat, repeat;
+  background-position:
+    right -80px top 90px,
+    left -170px top 340px,
+    0 0,
+    0 0;
+  background-size:
+    980px 460px,
+    620px 620px,
+    34px 34px,
+    34px 34px;
+  background-attachment: fixed;
+}
+
+// ===========================================================================
+// Layout and typography
+// ===========================================================================
 
 main.content {
   max-width: $content-measure;
 }
 
-h2 {
-  margin-top: 2.4rem;
-  padding-bottom: 0.3rem;
+.navbar {
   border-bottom: 1px solid $rule;
+
+  .navbar-nav .nav-link {
+    font-size: 0.82rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  }
+}
+
+h1 {
+  font-family: $font-display;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  margin-top: 2.6rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid $rule;
+  font-family: $font-display;
+}
+
+h3 {
+  margin-top: 1.8rem;
+  font-family: $font-display;
 }
 
 // Opening line on each page.
 .lede {
-  font-family: $font-family-serif;
-  font-size: 1.15rem;
+  font-family: $font-display;
+  font-size: 1.2rem;
   line-height: 1.5;
-  color: $muted;
+  color: $ink-muted;
   margin-bottom: 2rem;
+}
+
+// ===========================================================================
+// About-page hero — name, role, and circular headshot, per the mockup.
+// ===========================================================================
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid $rule;
+}
+
+.hero-name {
+  font-family: $font-display;
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 0 0 0.4rem;
+  border-bottom: 0;
+}
+
+.hero-role {
+  display: block;
+  font-size: 0.98rem;
+  color: $ink-muted;
+}
+
+.headshot img {
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 3px solid $surface;
+  box-shadow: 0 2px 14px rgba($ink, 0.13);
+}
+
+@media (max-width: 620px) {
+  .hero {
+    grid-template-columns: 1fr;
+    justify-items: start;
+    gap: 1.25rem;
+  }
+
+  .hero-name {
+    font-size: 2.1rem;
+  }
+
+  .headshot img {
+    width: 128px;
+    height: 128px;
+  }
 }
 
 // Row of profile links generated from data/cv.yml.
 .profile-links {
-  margin: 1.25rem 0 0.5rem;
+  margin: 1.5rem 0 0.5rem;
   font-size: 0.9rem;
-  color: $muted;
+  color: $ink-muted;
 
   a {
     text-decoration: none;
-    border-bottom: 1px solid rgba($primary, 0.35);
+    border-bottom: 1px solid rgba($accent, 0.35);
 
     &:hover {
-      border-bottom-color: $primary;
+      border-bottom-color: $accent;
     }
   }
 }
@@ -99,7 +234,7 @@ h2 {
 .cv-dates {
   font-variant-numeric: tabular-nums;
   font-size: 0.87rem;
-  color: $muted;
+  color: $ink-muted;
   padding-top: 0.15rem;
 }
 
@@ -108,7 +243,7 @@ h2 {
 }
 
 .cv-org {
-  color: $muted;
+  color: $ink-muted;
   font-weight: 400;
 
   &::before {
@@ -118,7 +253,7 @@ h2 {
 
 .cv-notes {
   font-size: 0.92rem;
-  color: lighten($body-color, 18%);
+  color: lighten($ink, 18%);
   margin-top: 0.15rem;
 }
 
@@ -133,12 +268,16 @@ h2 {
   }
 }
 
-// Print: strip navigation so the CV page prints as a document.
+// Print: strip navigation and artwork so the CV prints as a document.
 @media print {
   .navbar,
   #quarto-margin-sidebar,
   .nav-footer {
     display: none !important;
+  }
+
+  body {
+    background: #fff !important;
   }
 
   main.content {

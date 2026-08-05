@@ -23,6 +23,10 @@ personal:
   # weren't in a tracked file.
   email: "Luke.Burton1@student.lshtm.ac.uk"
   location: "London, UK"
+  # Circular headshot on the About page. Path relative to the project root.
+  # The image only renders if the file exists, so this is safe to leave set
+  # while you find a photo you like.
+  headshot: "images/headshot.jpg"
   # Rendered on the Now page only — kept out of cv.qmd so it never appears on
   # the professional CV.
   aside: "Also pulls pints behind the LSHTM bar. 301 served, at last count."
@@ -149,8 +153,6 @@ skills:
       - "Health economics"
       - "Cost-utility modelling"
       - "Economic evaluation"
-  # PLACEHOLDER — no software or languages list appeared on any source.
-  # - category: "Software"
-  #   items:
-  #     - "R"
-  #     - "Python"
+  - category: "Software"
+    items:
+      - "R"

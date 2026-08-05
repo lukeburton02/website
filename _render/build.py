@@ -253,6 +253,27 @@ def build_collaborations(cv: dict) -> None:
     )
 
 
+def build_headshot(cv: dict) -> None:
+    """Circular headshot for the About page hero.
+
+    Emits nothing unless `personal.headshot` is set AND the file is actually
+    on disk, so an unset or mistyped path leaves a clean gap rather than a
+    broken image icon.
+    """
+    personal = cv.get("personal") or {}
+    path = as_text(personal.get("headshot"))
+    name = as_text(personal.get("name"))
+
+    if path and (ROOT / path).exists():
+        body = f"::: {{.headshot}}\n![{name}]({path})\n:::"
+    else:
+        body = (
+            f"<!-- No headshot: set personal.headshot in data/cv.yml to an image "
+            f"path relative to the project root (currently: {path or 'unset'}). -->"
+        )
+    write("headshot.md", body)
+
+
 def build_contact(cv: dict) -> None:
     """Link row used on the About page."""
     links = (cv.get("personal") or {}).get("links") or []
@@ -326,6 +347,7 @@ def main() -> None:
     build_skills(cv)
     build_current_positions(cv)
     build_collaborations(cv)
+    build_headshot(cv)
     build_contact(cv)
     build_talks()
 
