@@ -1,6 +1,13 @@
 project:
   type: website
   output-dir: _site
+  # Quarto treats every .md file in the project directory as a page, so the
+  # maintainer docs at the repo root would otherwise be rendered into _site/
+  # and published to gh-pages. They are internal notes, not site content.
+  render:
+    - "*"
+    - "!CLAUDE.md"
+    - "!TASKS.md"
   # Regenerates _variables.yml and _generated/*.md from data/*.yml before every
   # render, so the site can never drift from the data files.
   pre-render: _render/build.py
@@ -8,6 +15,9 @@ project:
     - CNAME
 
 website:
+  # Canonical host. Without it, sitemap.xml and any absolute-URL feature have
+  # no host to build from.
+  site-url: https://lukeaburton.co.uk
   # The navbar brand is deliberately off: your name is not hardcoded anywhere
   # outside data/cv.yml, and _quarto.yml cannot read from it. The About link
   # is the route home.
