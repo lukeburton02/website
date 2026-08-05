@@ -1,0 +1,35 @@
+project:
+  type: website
+  output-dir: _site
+  # Regenerates _variables.yml and _generated/*.md from data/*.yml before every
+  # render, so the site can never drift from the data files.
+  pre-render: _render/build.py
+  resources:
+    - CNAME
+
+website:
+  # The navbar brand is deliberately off: your name is not hardcoded anywhere
+  # outside data/cv.yml, and _quarto.yml cannot read from it. The About link
+  # is the route home.
+  navbar:
+    title: false
+    left:
+      - href: index.qmd
+        text: About
+      - href: now.qmd
+        text: Now
+      - href: research.qmd
+        text: Research
+      - href: cv.qmd
+        text: CV
+      - href: writing.qmd
+        text: Writing
+
+format:
+  html:
+    theme:
+      - cosmo
+      - styles.scss
+    toc: false
+    anchor-sections: true
+    link-external-newwindow: true

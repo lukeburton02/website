@@ -1,0 +1,33 @@
+---
+title: "CV"
+---
+
+<!--
+Every line of this page comes from data/cv.yml, by way of _render/build.py.
+There is deliberately no name, date, job title or affiliation written here —
+edit the data file instead.
+-->
+
+::: {.cv-header}
+## {{< var personal.name >}} {.unnumbered .cv-name}
+
+{{< var personal.role >}}, {{< var personal.affiliation >}}
+:::
+
+{{< include _generated/contact-links.md >}}
+
+## Education
+
+{{< include _generated/cv-education.md >}}
+
+## Roles
+
+{{< include _generated/cv-roles.md >}}
+
+## Awards
+
+{{< include _generated/cv-awards.md >}}
+
+## Skills
+
+{{< include _generated/cv-skills.md >}}

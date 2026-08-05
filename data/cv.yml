@@ -1,0 +1,79 @@
+# ---------------------------------------------------------------------------
+# Single source of truth for everything about you that the site displays.
+#
+# Nothing in this file is hardcoded anywhere in the .qmd pages: cv.qmd and the
+# identity lines on index.qmd are generated from here by _render/build.py.
+# Edit this file, not the pages.
+#
+# Every entry below is a WORKED PLACEHOLDER EXAMPLE showing the expected
+# fields. Replace the values; keep the shape.
+#
+# Optional: create data/cv.private.yml (gitignored) with the same structure to
+# overlay private details — e.g. a real email or phone — for local renders.
+# ---------------------------------------------------------------------------
+
+personal:
+  name: "PLACEHOLDER — Your Name"
+  # `role` and `affiliation` are the strings used wherever your position is
+  # displayed (About page intro, CV header). Change them once, here.
+  role: "PLACEHOLDER — Doctoral Researcher"
+  affiliation: "PLACEHOLDER — Department of Something, University of Somewhere"
+  # Short one-line description used under the heading on the About page.
+  tagline: "PLACEHOLDER — I study one interesting thing and occasionally write about it."
+  email: "placeholder@example.ac.uk"
+  location: "PLACEHOLDER — Somewhere, UK"
+  # Profile links. Any key/value pair here becomes a link; drop the ones you
+  # don't use. `url` may be a mailto:, https:, or anything else.
+  links:
+    - label: "Email"
+      url: "mailto:placeholder@example.ac.uk"
+    - label: "Google Scholar"
+      url: "https://scholar.google.com/citations?user=PLACEHOLDER"
+    - label: "ORCID"
+      url: "https://orcid.org/0000-0000-0000-0000"
+    - label: "GitHub"
+      url: "https://github.com/lukeburton02"
+
+# ---------------------------------------------------------------------------
+# Education. `end: null` renders as "Present".
+# Dates are plain strings — quote them so YAML doesn't reinterpret them.
+# ---------------------------------------------------------------------------
+education:
+  - qualification: "PLACEHOLDER — PhD in Subject"
+    institution: "PLACEHOLDER — University of Somewhere"
+    start: "2024"
+    end: null
+    notes: "Thesis: *A Placeholder Title That Says Something About the Work*. Supervised by Prof. Placeholder."
+
+# ---------------------------------------------------------------------------
+# Roles: positions, appointments, employment, teaching.
+# ---------------------------------------------------------------------------
+roles:
+  - title: "PLACEHOLDER — Research Assistant"
+    organisation: "PLACEHOLDER — Some Research Centre"
+    start: "2023"
+    end: "2024"
+    notes: "One or two lines on what you actually did. Markdown works here."
+
+# ---------------------------------------------------------------------------
+# Awards, grants, scholarships, prizes.
+# ---------------------------------------------------------------------------
+awards:
+  - title: "PLACEHOLDER — Departmental Prize for Something"
+    awarder: "PLACEHOLDER — University of Somewhere"
+    year: "2023"
+    notes: "Optional one-line context. Delete the key if you don't want a note."
+
+# ---------------------------------------------------------------------------
+# Skills, grouped by category. `items` is a plain list of strings.
+# ---------------------------------------------------------------------------
+skills:
+  - category: "PLACEHOLDER — Methods"
+    items:
+      - "Placeholder method one"
+      - "Placeholder method two"
+  - category: "PLACEHOLDER — Software"
+    items:
+      - "R"
+      - "Python"
+      - "Quarto"

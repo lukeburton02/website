@@ -1,0 +1,147 @@
+/*-- scss:defaults --*/
+
+// Bootstrap/Quarto variables. These are consumed before the theme compiles, so
+// anything set here changes the theme itself rather than patching it after.
+
+$font-family-sans-serif: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif !default;
+$font-family-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif !default;
+$font-size-root: 17px !default;
+$line-height-base: 1.6 !default;
+
+$primary: #1f4e79 !default;
+$body-color: #23272b !default;
+$body-bg: #ffffff !default;
+$link-color: $primary !default;
+
+$headings-font-weight: 600 !default;
+$h1-font-size: 1.9rem !default;
+$h2-font-size: 1.3rem !default;
+$h3-font-size: 1.1rem !default;
+
+$navbar-bg: $body-bg !default;
+$navbar-fg: $body-color !default;
+
+// Local variables used by the rules below.
+$muted: #6c757d;
+$rule: #e6e8eb;
+$content-measure: 42rem;
+
+
+/*-- scss:rules --*/
+
+// Applied after the theme, so these win.
+
+.navbar {
+  border-bottom: 1px solid $rule;
+}
+
+main.content {
+  max-width: $content-measure;
+}
+
+h2 {
+  margin-top: 2.4rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid $rule;
+}
+
+// Opening line on each page.
+.lede {
+  font-family: $font-family-serif;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  color: $muted;
+  margin-bottom: 2rem;
+}
+
+// Row of profile links generated from data/cv.yml.
+.profile-links {
+  margin: 1.25rem 0 0.5rem;
+  font-size: 0.9rem;
+  color: $muted;
+
+  a {
+    text-decoration: none;
+    border-bottom: 1px solid rgba($primary, 0.35);
+
+    &:hover {
+      border-bottom-color: $primary;
+    }
+  }
+}
+
+// --- CV entries ----------------------------------------------------------
+// Two columns: dates on the left, everything else on the right. Collapses to
+// a single stacked column on narrow screens.
+
+.cv-header {
+  margin-bottom: 0.5rem;
+
+  .cv-name {
+    margin: 0;
+    border-bottom: 0;
+    font-size: 1.6rem;
+  }
+}
+
+.cv-entry {
+  display: grid;
+  grid-template-columns: 8.5rem 1fr;
+  gap: 0 1.5rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba($rule, 0.8);
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.cv-dates {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.87rem;
+  color: $muted;
+  padding-top: 0.15rem;
+}
+
+.cv-body p:last-child {
+  margin-bottom: 0;
+}
+
+.cv-org {
+  color: $muted;
+  font-weight: 400;
+
+  &::before {
+    content: "· ";
+  }
+}
+
+.cv-notes {
+  font-size: 0.92rem;
+  color: lighten($body-color, 18%);
+  margin-top: 0.15rem;
+}
+
+@media (max-width: 600px) {
+  .cv-entry {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+
+  .cv-dates {
+    padding-top: 0;
+  }
+}
+
+// Print: strip navigation so the CV page prints as a document.
+@media print {
+  .navbar,
+  #quarto-margin-sidebar,
+  .nav-footer {
+    display: none !important;
+  }
+
+  main.content {
+    max-width: none;
+  }
+}

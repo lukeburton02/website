@@ -1,0 +1,23 @@
+---
+title: "Now"
+---
+
+::: {.lede}
+What I'm working on at the moment.
+:::
+
+PLACEHOLDER — a [now page](https://nownownow.com/about) is a snapshot of your
+current focus, written in the present tense and rewritten whenever it stops
+being true. Unlike the About page, it's allowed to go stale between updates.
+
+## Research
+
+PLACEHOLDER — the project or chapter actually in front of you right now.
+
+## Reading
+
+PLACEHOLDER — what's on the desk.
+
+## Elsewhere
+
+PLACEHOLDER — teaching, organising, non-academic things, or delete this section.

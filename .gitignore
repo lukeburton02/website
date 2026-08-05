@@ -1,0 +1,16 @@
+# Quarto build output
+_site/
+.quarto/
+
+# Private CV overlay — real contact details, unpublished entries
+data/cv.private.yml
+
+# Derived from data/*.yml by _render/build.py on every render
+_variables.yml
+_generated/
+
+# macOS
+.DS_Store
+
+/.quarto/
+**/*.quarto_ipynb
