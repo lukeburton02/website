@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Now</title>
+<title>tasks</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -94,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./now.html" aria-current="page"> 
+    <a class="nav-link" href="./now.html"> 
 <span class="menu-text">Now</span></a>
   </li>  
   <li class="nav-item">
@@ -122,47 +122,42 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Now</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<div class="lede">
-<p>What I’m working on at the moment.</p>
-</div>
-<section id="research" class="level2">
-<h2 class="anchored" data-anchor-id="research">Research</h2>
-<p>Working out how social contact, mobility and attitude data can be used to understand and forecast the behavioural drivers of epidemic dynamics — the first substantive stretch of the PhD.</p>
-<p>Alongside it, hepatitis B progression models for evaluating emergency department blood-borne virus opt-out testing, and micro-costing of digitally enhanced BBV testing.</p>
+<section id="backlog" class="level1">
+<h1>Backlog</h1>
+<p>Running list of things to do to the site. Not urgent, not ordered by priority — delete items as they’re done.</p>
+<section id="content" class="level2">
+<h2 class="anchored" data-anchor-id="content">Content</h2>
+<ul class="task-list">
+<li><label><input type="checkbox"><strong>Publications</strong> — <code>data/publications.bib</code> is empty. Add entries as preprints and papers appear; they surface on Research automatically.</label></li>
+<li><label><input type="checkbox"><strong>Talks</strong> — <code>data/talks.yml</code> is <code>talks: []</code>. Nothing public yet. Add conference talks, posters and seminars as they happen.</label></li>
+<li><label><input type="checkbox"><strong>Headshot</strong> — set <code>personal.headshot</code> in <code>data/cv.yml</code> points at <code>images/headshot.jpg</code>, which doesn’t exist yet. Drop a photo in and the circular hero image on About appears by itself.</label></li>
+<li><label><input type="checkbox"><strong>Research → Projects</strong> — deliberately high-level for now. Revisit once the thesis structure settles; keep it to strands rather than chapters until then.</label></li>
+<li><label><input type="checkbox"><strong>Google Scholar</strong> — commented out in <code>cv.yml</code> links. Uncomment and fill in once there’s a profile worth linking to.</label></li>
+</ul>
 </section>
-<section id="elsewhere" class="level2">
-<h2 class="anchored" data-anchor-id="elsewhere">Elsewhere</h2>
-<p>Representing early career researchers at the Centre for the Mathematical Modelling of Infectious Diseases, which mostly means organising the monthly meetings and making sure people actually turn up to them.</p>
-<p>Also pulls pints behind the LSHTM bar. 301 served, at last count.</p>
-<p>Occasional writing goes up on <a href="https://laburton.substack.com">Substack</a>.</p>
-<!--
-A now page (https://nownownow.com/about) is a snapshot of current focus, written
-in the present tense and rewritten whenever it stops being true. Unlike the
-About page, it's allowed to go stale between updates — that's the point.
--->
+<section id="routine" class="level2">
+<h2 class="anchored" data-anchor-id="routine">Routine</h2>
+<ul class="task-list">
+<li><label><input type="checkbox"><strong>Now page</strong> — rewrite roughly monthly, or whenever it stops being true.</label></li>
+<li><label><input type="checkbox"><strong>CV</strong> — review after each supervisory milestone: upgrade, transfer, new collaborations, anything that changes a title or date.</label></li>
+<li><label><input type="checkbox"><strong>Writing</strong> — currently a single link out to Substack. If pieces accumulate, convert to a Quarto listing (instructions are in the comment at the bottom of <code>writing.qmd</code>).</label></li>
+</ul>
+</section>
+<section id="maintenance" class="level2">
+<h2 class="anchored" data-anchor-id="maintenance">Maintenance</h2>
+<ul class="task-list">
+<li><label><input type="checkbox"><strong>GitHub Pages IPs</strong> — the four A records in Cloudflare are hardcoded GitHub addresses. Stable for years, but if the site ever goes dark with DNS looking correct, re-check them against GitHub’s docs before assuming something else broke.</label></li>
+<li><label><input type="checkbox"><strong>HTTPS certificate</strong> — auto-renews, expiry was 2026-11-03 at time of setup. If browsers start warning, check Settings → Pages first.</label></li>
+<li><label><input type="checkbox"><strong>Node 20 deprecation warning</strong> in Actions — harmless for now; the <code>checkout</code> and <code>setup-python</code> actions will need a version bump eventually.</label></li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
