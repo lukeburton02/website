@@ -28,6 +28,7 @@ talks:
   # shows as "August 2026" rather than guessing a date. No recording link yet.
   - date: "2026-08"
     title: "Understanding and predicting behavioural drivers of epidemic dynamics"
-    venue: "Modelling behaviour for global challenges: epidemics and energy systems, Isaac Newton Institute"
-    location: "University of Nottingham"
+    venue: "Modelling behaviour for global challenges: epidemics and energy systems"
+    location: "Isaac Newton Institute, University of Nottingham"
+    slides_url: "slides/2026-08-ini-behavioural-drivers.pdf"
     event_url: "https://www.newton.ac.uk/event/mhbw02/"

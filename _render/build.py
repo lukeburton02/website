@@ -341,23 +341,36 @@ def build_talks() -> None:
     blocks = []
     for talk in talks:
         title = as_text(talk.get("title"))
-        # venue, then location, then whatever links exist — one line each, so a
-        # talk with no slides or event page simply has fewer lines.
-        lines = [as_text(talk.get("venue")), as_text(talk.get("location"))]
-        links = [
-            f"[{label}]({url})"
+        lines = [as_text(talk.get("venue"))]
+        # The pin is decorative — aria-hidden so a screen reader reads the place,
+        # not "round pushpin".
+        location = as_text(talk.get("location"))
+        if location:
+            lines.append(f'<span class="talk-pin" aria-hidden="true">📍</span>{location}')
+        # Buttons for whatever links exist, so a talk with no slides or event
+        # page simply has fewer of them.
+        buttons = [
+            f"[{label}]({url}){{.talk-btn}}"
             for label, url in (
                 ("Slides", as_text(talk.get("slides_url"))),
                 ("Event", as_text(talk.get("event_url"))),
             )
             if url
         ]
-        if links:
-            lines.append(" · ".join(links))
-        notes = "<br>".join(line for line in lines if line)
+        # One line each, then the buttons together on a row of their own.
+        notes = "<br>".join(lines)
+        if buttons:
+            notes = f'{notes}\n\n::: {{.talk-links}}\n{" ".join(buttons)}\n:::'
         blocks.append(entry_block(pretty_date(talk.get("date")), title, "", notes))
 
-    write("talks.md", "\n\n".join(blocks) if blocks else placeholder("talks"))
+    # The wrapper narrows the date column: talk dates are short, and the extra
+    # room keeps a long talk title on one line. See .talk-list in styles.scss.
+    body = (
+        "::: {.talk-list}\n" + "\n\n".join(blocks) + "\n:::"
+        if blocks
+        else placeholder("talks")
+    )
+    write("talks.md", body)
 
 
 def build_publications() -> None:

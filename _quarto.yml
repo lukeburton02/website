@@ -13,6 +13,9 @@ project:
   pre-render: _render/build.py
   resources:
     - CNAME
+    # Slide decks linked from data/talks.yml. Not a render input, so Quarto only
+    # copies them into _site/ because they are listed here.
+    - slides/
 
 website:
   # Canonical host. Without it, sitemap.xml and any absolute-URL feature have

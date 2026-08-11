@@ -267,6 +267,58 @@ h3 {
   margin-top: 0.15rem;
 }
 
+// --- Talks ---------------------------------------------------------------
+// Same two-column entry as the CV, but talk dates are only ever a month and a
+// year ("August 2026" — 6.5rem holds "September 2026" at 0.87rem), so the left
+// column is narrowed from 11rem to buy the title enough width to stay on one
+// line. Don't widen it back: at 11rem a 66-character title wrapped.
+
+.talk-list .cv-entry {
+  grid-template-columns: 6.5rem 1fr;
+}
+
+.talk-pin {
+  margin-right: 0.3rem;
+  font-size: 0.85em;   // emoji run large next to text at this size
+}
+
+// Slides / Event buttons, in the manner of a talks page: quiet outlines that
+// fill with the accent on hover.
+.talk-links {
+  margin-top: 0.45rem;
+
+  // Pandoc wraps the button row in a <p>, so the flex row lives there.
+  p {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .talk-btn {
+    display: inline-block;
+    padding: 0.1rem 0.55rem;
+    border: 1px solid rgba($accent, 0.45);
+    border-radius: 999px;
+    font-size: 0.82rem;
+    line-height: 1.5;
+    color: $accent;
+    text-decoration: none;
+
+    &:hover {
+      background: $accent;
+      border-color: $accent;
+      color: $surface;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .talk-list .cv-entry {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 600px) {
   .cv-entry {
     grid-template-columns: 1fr;
