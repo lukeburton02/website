@@ -4,19 +4,30 @@
 # Fields:
 #   date       required, quoted string. ISO ("2025-06-14") sorts and formats
 #              best, but any string is passed through as-is if unparseable.
+#              "2026-08" renders as "August 2026" — use it when the exact day
+#              isn't known rather than guessing one.
 #   title      required.
 #   venue      required — conference, seminar series, institution.
+#   location   optional. City or host institution, on its own line.
 #   slides_url optional. Omit the key (or leave null) and no link is shown.
+#   event_url  optional. Link to the event or workshop page.
 #
 # Entries are sorted newest-first at build time; order here doesn't matter.
 # ---------------------------------------------------------------------------
 
-# Empty: no talks were listed on any of the fetched profile pages, and inventing
-# them would put false claims on a public site. Add real entries in the form:
+# Add entries in the form:
 #
 #   - date: "2026-06-14"
 #     title: "The Title of the Talk"
-#     venue: "Conference or Seminar Series, City"
+#     venue: "Conference or Seminar Series"
+#     location: "City"                               # or omit the key entirely
 #     slides_url: "https://example.com/slides.pdf"   # or omit the key entirely
 
-talks: []
+talks:
+  # Day of the talk not recorded — the workshop ran 10–14 August 2026, so this
+  # shows as "August 2026" rather than guessing a date. No recording link yet.
+  - date: "2026-08"
+    title: "Understanding and predicting behavioural drivers of epidemic dynamics"
+    venue: "Modelling behaviour for global challenges: epidemics and energy systems, Isaac Newton Institute"
+    location: "University of Nottingham"
+    event_url: "https://www.newton.ac.uk/event/mhbw02/"

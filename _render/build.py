@@ -341,11 +341,20 @@ def build_talks() -> None:
     blocks = []
     for talk in talks:
         title = as_text(talk.get("title"))
-        venue = as_text(talk.get("venue"))
-        slides = as_text(talk.get("slides_url"))
-        notes = venue
-        if slides:
-            notes = f"{notes}<br>[Slides]({slides})" if notes else f"[Slides]({slides})"
+        # venue, then location, then whatever links exist — one line each, so a
+        # talk with no slides or event page simply has fewer lines.
+        lines = [as_text(talk.get("venue")), as_text(talk.get("location"))]
+        links = [
+            f"[{label}]({url})"
+            for label, url in (
+                ("Slides", as_text(talk.get("slides_url"))),
+                ("Event", as_text(talk.get("event_url"))),
+            )
+            if url
+        ]
+        if links:
+            lines.append(" · ".join(links))
+        notes = "<br>".join(line for line in lines if line)
         blocks.append(entry_block(pretty_date(talk.get("date")), title, "", notes))
 
     write("talks.md", "\n\n".join(blocks) if blocks else placeholder("talks"))
