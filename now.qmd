@@ -19,8 +19,8 @@ testing.
 ## Elsewhere
 
 Representing early career researchers at the Centre for the Mathematical
-Modelling of Infectious Diseases, which mostly means helping organise the
-monthly meetings we hold between ourselves.
+Modelling of Infectious Diseases, mostly by helping organise our monthly
+meetings.
 
 {{< var personal.aside >}}
 

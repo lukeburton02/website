@@ -60,7 +60,10 @@ personal:
 #   notes       — thesis title and anything else, on the line below the grade
 # ---------------------------------------------------------------------------
 education:
-  - qualification: "PhD, Epidemiology"
+  # Worded as the position rather than the award ("PhD, Epidemiology"), which
+  # reads on both the CV and the About list as a qualification already held.
+  # This one field drives both pages — build_current_positions() reads it too.
+  - qualification: "PhD Researcher"
     institution: "London School of Hygiene & Tropical Medicine"
     department: "Department of Infectious Disease Epidemiology and Dynamics"
     start: "Sep 2025"

@@ -257,18 +257,36 @@ def build_skills(cv: dict) -> None:
 
 
 def build_current_positions(cv: dict) -> None:
-    """Roles with no end date — the ones held right now. Used on the About page.
+    """Everything held right now — education first, then roles. About page.
+
+    The heading on index.qmd reads "Current positions", so the PhD has to be
+    in the list: leaving it out would make the two part-time entries below it
+    look like the whole of the week. It still lives under `education` in
+    cv.yml rather than being duplicated into `roles`, because it is a
+    qualification in progress and the CV lists it as one — this function is
+    the only place the two are read together.
+
+    An education entry contributes its `supervision` line rather than its
+    `notes`, since `notes` holds the thesis title, which the paragraphs above
+    this list on the About page have already covered.
 
     Kept as generated output rather than prose in index.qmd so that no job
     title or institution is ever hardcoded in a .qmd file.
     """
-    current = [r for r in (cv.get("roles") or []) if not as_text(r.get("end"))]
+    entries = [
+        (e.get("qualification"), e.get("institution"), e.get("supervision"))
+        for e in (cv.get("education") or [])
+        if not as_text(e.get("end"))
+    ] + [
+        (r.get("title"), r.get("organisation"), r.get("notes"))
+        for r in (cv.get("roles") or [])
+        if not as_text(r.get("end"))
+    ]
+
     lines = []
-    for role in current:
-        title = as_text(role.get("title"))
-        org = as_text(role.get("organisation"))
-        note = as_text(role.get("notes"))
-        line = f"- **{title}**" if title else "-"
+    for heading, org, note in entries:
+        heading, org, note = as_text(heading), as_text(org), as_text(note)
+        line = f"- **{heading}**" if heading else "-"
         if org:
             line += f", {org}"
         if note:
@@ -276,7 +294,7 @@ def build_current_positions(cv: dict) -> None:
         lines.append(line)
     write(
         "current-positions.md",
-        "\n".join(lines) if lines else "<!-- no current roles -->",
+        "\n".join(lines) if lines else "<!-- no current positions -->",
     )
 
 
