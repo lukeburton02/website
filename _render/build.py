@@ -266,15 +266,17 @@ def build_current_positions(cv: dict) -> None:
     in progress and the CV lists it as one — this function is the only place
     the two are read together.
 
-    An education entry contributes its `supervision` line rather than its
-    `notes`, since `notes` holds the thesis title, which the paragraphs above
-    this list on the About page have already covered.
+    An education entry contributes title and institution only, no note. Its
+    `notes` holds the thesis title, which the paragraphs above this list have
+    already covered, and its `supervision` line names Imperial one bullet
+    above the Imperial role, which read as repetition on the page. Supervision
+    is a CV detail; here the list just says what is held.
 
     Kept as generated output rather than prose in index.qmd so that no job
     title or institution is ever hardcoded in a .qmd file.
     """
     entries = [
-        (e.get("title"), e.get("institution"), e.get("supervision"))
+        (e.get("title"), e.get("institution"), None)
         for e in (cv.get("education") or [])
         if not as_text(e.get("end"))
     ] + [
