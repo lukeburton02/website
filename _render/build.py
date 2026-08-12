@@ -189,7 +189,7 @@ def build_education(cv: dict) -> None:
             date_range(e.get("start"), e.get("end")),
             as_text(e.get("qualification")),
             as_text(e.get("institution")),
-            note_lines(e.get("grade"), e.get("notes")),
+            note_lines(e.get("supervision"), e.get("grade"), e.get("notes")),
             department=as_text(e.get("department")),
         )
         for e in entries

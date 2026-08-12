@@ -52,9 +52,10 @@ personal:
 # Education. `end: null` renders as "Present".
 # Dates are quoted strings so YAML doesn't reinterpret them.
 #
-# Each entry renders as up to four display lines:
+# Each entry renders as up to five display lines:
 #   department  — optional, its own line above the qualification
 #   qualification · institution
+#   supervision — optional, its own line (joint supervision arrangements)
 #   grade       — optional, its own line (null where there isn't one)
 #   notes       — thesis title and anything else, on the line below the grade
 # ---------------------------------------------------------------------------
@@ -65,6 +66,7 @@ education:
     start: "Sep 2025"
     end: null
     grade: null
+    supervision: "Jointly supervised with Imperial College London and UKHSA."
     notes: "Thesis: *Understanding and predicting behavioural drivers of epidemic dynamics*."
 
   - qualification: "MSc Health Data Science"
@@ -94,7 +96,7 @@ roles:
     organisation: "Imperial College London"
     start: "Sep 2025"
     end: null
-    notes: "Held alongside the PhD."
+    notes: "Part of the PhD."
 
   - title: "Research Assistant, Health Economics (part-time)"
     organisation: "University College London"
@@ -145,8 +147,13 @@ collaborations:
     notes: "Mathematical modelling team, on cost-effectiveness of emergency department blood-borne virus opt-out testing."
   - organisation: "University of Leicester"
     notes: "GPs and clinical staff, who help with data, interviews and costing questions for the blood-borne virus work."
+  # The PhD supervision is not described here: it sits on the education entry
+  # above, where UKHSA is named as a joint supervising institution. This entry
+  # covers only the blood-borne virus data relationship, so a supervising
+  # institution is never bundled in with the collaborations on the part-time
+  # health-economics work.
   - organisation: "UK Health Security Agency (UKHSA)"
-    notes: "Mainly on the PhD, on the policy-relevant side; also a data source for the blood-borne virus work."
+    notes: "A data source for the blood-borne virus work."
 
 # ---------------------------------------------------------------------------
 # Awards, grants, scholarships, prizes. Add entries in the form:

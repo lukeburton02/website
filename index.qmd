@@ -24,7 +24,7 @@ introduction becomes a major epidemic.
 
 I also work in health economics, on screening for blood-borne viruses.
 
-Alongside the PhD:
+Current positions:
 
 {{< include _generated/current-positions.md >}}
 
