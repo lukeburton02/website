@@ -53,17 +53,21 @@ personal:
 # Dates are quoted strings so YAML doesn't reinterpret them.
 #
 # Each entry renders as up to five display lines:
-#   department  — optional, its own line above the qualification
-#   qualification · institution
+#   department  — optional, its own line above the title
+#   title · institution
 #   supervision — optional, its own line (joint supervision arrangements)
 #   grade       — optional, its own line (null where there isn't one)
 #   notes       — thesis title and anything else, on the line below the grade
+#
+# `title` is named to match `roles:` and `service:` below, and because a
+# finished degree and a degree in progress want different wording: an award
+# for the first ("MSc Health Data Science"), a position for the second.
 # ---------------------------------------------------------------------------
 education:
   # Worded as the position rather than the award ("PhD, Epidemiology"), which
-  # reads on both the CV and the About list as a qualification already held.
-  # This one field drives both pages — build_current_positions() reads it too.
-  - qualification: "PhD Researcher"
+  # reads on both the CV and the About list as a degree already held. This one
+  # field drives both pages — build_current_positions() reads it too.
+  - title: "PhD Researcher"
     institution: "London School of Hygiene & Tropical Medicine"
     department: "Department of Infectious Disease Epidemiology and Dynamics"
     start: "Sep 2025"
@@ -72,14 +76,14 @@ education:
     supervision: "Jointly supervised with Imperial College London and UKHSA."
     notes: "Thesis: *Understanding and predicting behavioural drivers of epidemic dynamics*."
 
-  - qualification: "MSc Health Data Science"
+  - title: "MSc Health Data Science"
     institution: "London School of Hygiene & Tropical Medicine"
     start: "Sep 2024"
     end: "Sep 2025"
     grade: "Distinction"
     notes: "Thesis: *Using machine learning to understand vaccine responses to influenza*."
 
-  - qualification: "MMath Mathematics"
+  - title: "MMath Mathematics"
     institution: "University of Oxford"
     start: "Sep 2020"
     end: "Jun 2024"

@@ -188,7 +188,7 @@ def build_education(cv: dict) -> None:
     blocks = [
         entry_block(
             date_range(e.get("start"), e.get("end")),
-            as_text(e.get("qualification")),
+            as_text(e.get("title")),
             as_text(e.get("institution")),
             note_lines(e.get("supervision"), e.get("grade"), e.get("notes")),
             department=as_text(e.get("department")),
@@ -262,9 +262,9 @@ def build_current_positions(cv: dict) -> None:
     The heading on index.qmd reads "Current positions", so the PhD has to be
     in the list: leaving it out would make the two part-time entries below it
     look like the whole of the week. It still lives under `education` in
-    cv.yml rather than being duplicated into `roles`, because it is a
-    qualification in progress and the CV lists it as one — this function is
-    the only place the two are read together.
+    cv.yml rather than being duplicated into `roles`, because it is a degree
+    in progress and the CV lists it as one — this function is the only place
+    the two are read together.
 
     An education entry contributes its `supervision` line rather than its
     `notes`, since `notes` holds the thesis title, which the paragraphs above
@@ -274,7 +274,7 @@ def build_current_positions(cv: dict) -> None:
     title or institution is ever hardcoded in a .qmd file.
     """
     entries = [
-        (e.get("qualification"), e.get("institution"), e.get("supervision"))
+        (e.get("title"), e.get("institution"), e.get("supervision"))
         for e in (cv.get("education") or [])
         if not as_text(e.get("end"))
     ] + [
