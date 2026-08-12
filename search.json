@@ -46,14 +46,14 @@
     "href": "cv.html#education",
     "title": "CV",
     "section": "Education",
-    "text": "Education\n\n\n\nSep 2025 – Present\n\n\n\nDepartment of Infectious Disease Epidemiology and Dynamics\n\nPhD, Epidemiology London School of Hygiene & Tropical Medicine\n\nThesis: Understanding and predicting behavioural drivers of epidemic dynamics.\n\n\n\n\n\nSep 2024 – Sep 2025\n\n\nMSc Health Data Science London School of Hygiene & Tropical Medicine\n\nDistinction\nThesis: Using machine learning to understand vaccine responses to influenza.\n\n\n\n\n\nSep 2020 – Jun 2024\n\n\nMMath Mathematics University of Oxford\n\nMerit\nThesis: Branching process models for estimating the probability of a major infectious disease epidemic."
+    "text": "Education\n\n\n\nSep 2025 – Present\n\n\n\nDepartment of Infectious Disease Epidemiology and Dynamics\n\nPhD, Epidemiology London School of Hygiene & Tropical Medicine\n\nJointly supervised with Imperial College London and UKHSA.\nThesis: Understanding and predicting behavioural drivers of epidemic dynamics.\n\n\n\n\n\nSep 2024 – Sep 2025\n\n\nMSc Health Data Science London School of Hygiene & Tropical Medicine\n\nDistinction\nThesis: Using machine learning to understand vaccine responses to influenza.\n\n\n\n\n\nSep 2020 – Jun 2024\n\n\nMMath Mathematics University of Oxford\n\nMerit\nThesis: Branching process models for estimating the probability of a major infectious disease epidemic."
   },
   {
     "objectID": "cv.html#roles",
     "href": "cv.html#roles",
     "title": "CV",
     "section": "Roles",
-    "text": "Roles\n\n\n\nSep 2025 – Present\n\n\nVisiting Researcher Imperial College London\n\nHeld alongside the PhD.\n\n\n\n\n\nOct 2025 – Present\n\n\n\nInfectious Disease Informatics\n\nResearch Assistant, Health Economics (part-time) University College London\n\nNIHR-funded work on cost-utility modelling and economic evaluation of blood-borne virus screening interventions.\n\n\n\n\n\nJul 2024 – Sep 2024\n\n\nDisease Modelling Intern Big Data Institute\n\nVaccine equity and trachoma resurgence.\n\n\n\n\n\nJul 2023 – Sep 2023\n\n\nData Science Intern esure Group\n\nPredicting crash rates and quoted premiums.\n\n\n\n\n\nJul 2021 – Aug 2021\n\n\nIT Consulting Intern Aire Logic\n\nProof-of-concept medical rostering system."
+    "text": "Roles\n\n\n\nSep 2025 – Present\n\n\nVisiting Researcher Imperial College London\n\nPart of the PhD.\n\n\n\n\n\nOct 2025 – Present\n\n\n\nInfectious Disease Informatics\n\nResearch Assistant, Health Economics (part-time) University College London\n\nNIHR-funded work on cost-utility modelling and economic evaluation of blood-borne virus screening interventions.\n\n\n\n\n\nJul 2024 – Sep 2024\n\n\nDisease Modelling Intern Big Data Institute\n\nVaccine equity and trachoma resurgence.\n\n\n\n\n\nJul 2023 – Sep 2023\n\n\nData Science Intern esure Group\n\nPredicting crash rates and quoted premiums.\n\n\n\n\n\nJul 2021 – Aug 2021\n\n\nIT Consulting Intern Aire Logic\n\nProof-of-concept medical rostering system."
   },
   {
     "objectID": "cv.html#volunteering",
@@ -81,7 +81,7 @@
     "href": "index.html",
     "title": "Luke Burton",
     "section": "",
-    "text": "PhD Researcher · Department of Infectious Disease Epidemiology and Dynamics, London School of Hygiene & Tropical Medicine\n\n\n\n\n\n\n\nUnderstanding and predicting the behavioural drivers of epidemic dynamics. Also economic evaluation of blood-borne virus screening.\n\nMy PhD asks how social contact, mobility and attitude data can be used to understand and help anticipate the behavioural drivers of epidemic dynamics. It builds on a background in mathematics and health data science, and on earlier work using branching process models to estimate the probability that an introduction becomes a major epidemic.\nI also work in health economics, on screening for blood-borne viruses.\nAlongside the PhD:\n\n\nVisiting Researcher, Imperial College London — Held alongside the PhD.\nResearch Assistant, Health Economics (part-time), University College London — NIHR-funded work on cost-utility modelling and economic evaluation of blood-borne virus screening interventions.\n\n\n\nEmail · LSHTM profile · UCL profile · ORCID · Substack · LinkedIn · GitHub"
+    "text": "PhD Researcher · Department of Infectious Disease Epidemiology and Dynamics, London School of Hygiene & Tropical Medicine\n\n\n\n\n\n\n\nUnderstanding and predicting the behavioural drivers of epidemic dynamics. Also economic evaluation of blood-borne virus screening.\n\nMy PhD asks how social contact, mobility and attitude data can be used to understand and help anticipate the behavioural drivers of epidemic dynamics. It builds on a background in mathematics and health data science, and on earlier work using branching process models to estimate the probability that an introduction becomes a major epidemic.\nI also work in health economics, on screening for blood-borne viruses.\nCurrent positions:\n\n\nVisiting Researcher, Imperial College London — Part of the PhD.\nResearch Assistant, Health Economics (part-time), University College London — NIHR-funded work on cost-utility modelling and economic evaluation of blood-borne virus screening interventions.\n\n\n\nEmail · LSHTM profile · UCL profile · ORCID · Substack · LinkedIn · GitHub"
   },
   {
     "objectID": "research.html",
@@ -123,7 +123,7 @@
     "href": "research.html#collaborations",
     "title": "Research",
     "section": "Collaborations",
-    "text": "Collaborations\nA few groups I work with on the above.\n\n\nUniversity of Bristol — Mathematical modelling team, on cost-effectiveness of emergency department blood-borne virus opt-out testing.\nUniversity of Leicester — GPs and clinical staff, who help with data, interviews and costing questions for the blood-borne virus work.\nUK Health Security Agency (UKHSA) — Mainly on the PhD, on the policy-relevant side; also a data source for the blood-borne virus work."
+    "text": "Collaborations\nA few groups I work with on the above.\n\n\nUniversity of Bristol — Mathematical modelling team, on cost-effectiveness of emergency department blood-borne virus opt-out testing.\nUniversity of Leicester — GPs and clinical staff, who help with data, interviews and costing questions for the blood-borne virus work.\nUK Health Security Agency (UKHSA) — A data source for the blood-borne virus work."
   },
   {
     "objectID": "research.html#publications",
