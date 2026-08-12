@@ -31,8 +31,10 @@ jobs:
         with:
           python-version: "3.12"
 
+      # Pinned in requirements.txt so CI and a local render use the same
+      # version. Bump it there, not here.
       - name: Install build dependencies
-        run: python -m pip install --upgrade pyyaml
+        run: python -m pip install -r requirements.txt
 
       # Must run as its own step, not just as _quarto.yml's `pre-render`:
       # Quarto expands {{< include >}} directives while building the project

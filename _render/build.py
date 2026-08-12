@@ -34,7 +34,8 @@ try:
     import yaml
 except ModuleNotFoundError:  # pragma: no cover - environment guard
     sys.exit(
-        "build.py needs PyYAML. Install it with:  python3 -m pip install pyyaml"
+        "build.py needs PyYAML. Install it with:"
+        "  python3 -m pip install -r requirements.txt"
     )
 
 ROOT = Path(__file__).resolve().parent.parent

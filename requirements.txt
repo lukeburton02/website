@@ -1,0 +1,10 @@
+# Build-time dependencies for _render/build.py, which Quarto runs as its
+# pre-render step. Nothing here is needed to *read* the site — only to
+# regenerate _variables.yml and _generated/ from data/*.yml.
+#
+# Install with:  python3 -m pip install -r requirements.txt
+#
+# Pinned exactly so a render in CI and a render on a laptop can't disagree.
+# To take a newer version, bump the number here and run the install again;
+# .github/workflows/publish.yml reads this same file, so the two stay in step.
+PyYAML==6.0.3

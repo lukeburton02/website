@@ -105,6 +105,34 @@ published output — if it ever goes missing, the custom domain breaks.
 so order in the file doesn't matter. Omit `slides_url` (or set it `null`) and
 no link renders.
 
+**Publish slides** — a deck is written for a room that already knows who
+everyone is; the published file is not. Work through this before committing
+one, every time:
+
+1. **Strip every personal name from the title slide.** Conference decks
+   normally open with the full project-team list. The published
+   `slides/2026-08-ini-behavioural-drivers.pdf` keeps only "Luke Burton –
+   NIHR HPRU PhD" and the talk title; five names on the source slide were
+   removed. Match that.
+2. **Check the rest of the deck too** — acknowledgements slides, "joint work
+   with" lines, supervisor names in a footer, names inside screenshots.
+   Citations of published papers are fine: those are already public.
+3. **Named groups follow the site-wide rule below** — his own affiliations may
+   be named, collaborating groups are described rather than named.
+4. **Export the PDF from the redacted copy, and keep the source deck out of
+   the repo.** A `.pptx` or `.key` carries author metadata, speaker notes and
+   edit history that the PDF does not. Only the PDF is committed, to `slides/`.
+5. **Verify the committed file**, don't trust the export:
+
+   ```bash
+   pdftotext slides/<file>.pdf - | grep -i -e "<surname>" -e "joint work" -e "with thanks"
+   python3 -c "import re,sys; d=open(sys.argv[1],'rb').read(); print([k for k in (b'/Author',b'/Title',b'/Creator') if re.search(k+rb'\s*\((.*?)\)',d)])" slides/<file>.pdf
+   ```
+
+   The existing deck has no `/Author` key at all and a filename-derived
+   `/Title` — that's the standard to match. A name surviving in metadata is
+   invisible on screen and still ships.
+
 **Add a publication** — append a BibTeX entry to `data/publications.bib`.
 `research.qmd` sets `nocite: "@*"`, so every entry appears automatically. No
 `.qmd` edit needed.
