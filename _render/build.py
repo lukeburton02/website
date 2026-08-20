@@ -374,6 +374,7 @@ def build_talks() -> None:
             f"[{label}]({url}){{.talk-btn}}"
             for label, url in (
                 ("Slides", as_text(talk.get("slides_url"))),
+                ("Recording", as_text(talk.get("video_url"))),
                 ("Event", as_text(talk.get("event_url"))),
             )
             if url

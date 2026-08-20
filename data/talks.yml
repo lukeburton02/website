@@ -10,6 +10,10 @@
 #   venue      required — conference, seminar series, institution.
 #   location   optional. City or host institution, on its own line.
 #   slides_url optional. Omit the key (or leave null) and no link is shown.
+#   video_url  optional. Link to a recording. Use the canonical YouTube form
+#              "https://www.youtube.com/watch?v=ID" — strip any &list=,
+#              &index=, &t=, &pp= or ?si= picked up from a playlist or share
+#              link, which either break or track when the playlist changes.
 #   event_url  optional. Link to the event or workshop page.
 #
 # Entries are sorted newest-first at build time; order here doesn't matter.
@@ -25,10 +29,11 @@
 
 talks:
   # Day of the talk not recorded — the workshop ran 10–14 August 2026, so this
-  # shows as "August 2026" rather than guessing a date. No recording link yet.
+  # shows as "August 2026" rather than guessing a date.
   - date: "2026-08"
     title: "Understanding and predicting behavioural drivers of epidemic dynamics"
     venue: "Modelling behaviour for global challenges: epidemics and energy systems"
     location: "Isaac Newton Institute, University of Nottingham"
     slides_url: "slides/2026-08-ini-behavioural-drivers.pdf"
+    video_url: "https://www.youtube.com/watch?v=Gp0VzLKeBBo"
     event_url: "https://www.newton.ac.uk/event/mhbw02/"
