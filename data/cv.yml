@@ -13,8 +13,12 @@
 
 personal:
   name: "Luke Burton"
-  # "PhD Researcher" is the wording your own UCL profile uses. LSHTM renders it
-  # formally as "Research Student - MPhil/PhD - Epidemiology & Population Health".
+  # "PhD Researcher" is the wording your own UCL profile uses. LSHTM registered
+  # this formally as "Research Student - MPhil/PhD - Epidemiology & Population
+  # Health" until upgrading (passed 26 Aug 2026); PhD registration dates from the
+  # original Sep 2025 start under Academic Manual reg 9.3.2.2.1, so the education
+  # entry's `start` needs no adjustment. Don't reword `role` to match whatever
+  # string the LSHTM profile currently shows.
   role: "PhD Researcher"
   affiliation: "Department of Infectious Disease Epidemiology and Dynamics, London School of Hygiene & Tropical Medicine"
   tagline: "Understanding and predicting the behavioural drivers of epidemic dynamics. Also economic evaluation of blood-borne virus screening."
@@ -74,7 +78,7 @@ education:
     end: null
     grade: null
     supervision: "Jointly supervised with Imperial College London and UKHSA."
-    notes: "Thesis: *Understanding and predicting behavioural drivers of epidemic dynamics*."
+    notes: "Thesis: *Understanding and predicting behavioural drivers of epidemic dynamics*. Funded by the NIHR Health Protection Research Unit in Health Analytics and Modelling."
 
   - title: "MSc Health Data Science"
     institution: "London School of Hygiene & Tropical Medicine"
@@ -113,7 +117,7 @@ roles:
     notes: "NIHR-funded work on cost-utility modelling and economic evaluation of blood-borne virus screening interventions."
 
   - title: "Disease Modelling Intern"
-    organisation: "Big Data Institute"
+    organisation: "Big Data Institute, University of Oxford"
     start: "Jul 2024"
     end: "Sep 2024"
     notes: "Vaccine equity and trachoma resurgence."
@@ -153,7 +157,7 @@ collaborations:
   - organisation: "University of Bristol"
     notes: "Mathematical modelling team, on cost-effectiveness of emergency department blood-borne virus opt-out testing."
   - organisation: "University of Leicester"
-    notes: "GPs and clinical staff, who help with data, interviews and costing questions for the blood-borne virus work."
+    notes: "GPs and clinical staff, who contribute data, interviews and costing expertise to the blood-borne virus work."
   # The PhD supervision is not described here: it sits on the education entry
   # above, where UKHSA is named as a joint supervising institution. This entry
   # covers only the blood-borne virus data relationship, so a supervising
